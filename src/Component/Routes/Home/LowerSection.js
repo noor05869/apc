@@ -607,7 +607,7 @@ class LowerSection extends React.Component {
                     {this.state.obtPerct.toFixed(2)} %
                   </h3>
                 </div>
-
+<div className="col-lg-1 col-md-1"></div>
                 <div className="text-center col-lg-5   col-md-5   expectRevdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Revenue
