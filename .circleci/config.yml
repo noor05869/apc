@@ -1,0 +1,26 @@
+version: 2.1
+
+orbs:
+  aws-ecr: circleci/aws-ecr@7.0.0
+  aws-ecs: circleci/aws-ecs@2.2.1
+
+workflows:
+  build_and_push_image:
+    jobs:
+      - aws-ecr/build-and-push-image:
+          context: AWS-access
+          repo: asset-performance-comparator
+          tag: "latest"
+          dockerfile: Dockerfile
+          path: .
+          filters:
+            branches:
+              only: main
+
+      - aws-ecs/deploy-service-update:
+          context: AWS-access
+          cluster-name: 'account-opening-form'
+          container-image-name-updates: 'container=asset-performance-comparator, tag=latest'
+          family: 'asset-performance-comparator'
+          requires:
+            - aws-ecr/build-and-push-image
