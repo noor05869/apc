@@ -633,7 +633,7 @@ class LowerSection extends React.Component {
               </div>
             </div>
             {/* <div className="col-md-1"></div> */}
-            <div className="col-lg-7 col-xl-7 col-md-7 col-sm-4 mb-p-0  chardiv">
+            <div className="col-lg-7 col-xl-7 col-md-7 col-sm-7 mb-p-0  chardiv">
               <div className="graph-loader">
                 {this.state.loading == true && <LinearProgress />}
               </div>
@@ -723,7 +723,7 @@ class LowerSection extends React.Component {
         </div>
 
         <div className="container-fluid  addressdiv">
-          <div className="row  align-items-center">
+          <div className="row  ">
             <div className="col-1"></div>
             <div className="col-lg-4 col-md-4 msgcol">
               <h2 className="msg">
@@ -762,7 +762,7 @@ class LowerSection extends React.Component {
             </div>
             <div className="col-lg-1  "></div>
 
-            <div className="col-lg-2 col-md-2 msgcol ">
+            <div className="col-lg-2 col-md-2  col-sm-3 msgcol ">
               <strong className="head">Compant</strong>
               <Link  className="Link">
                 <p   className="address1">about Us </p>
@@ -777,7 +777,7 @@ class LowerSection extends React.Component {
                 <p className="address">Careers </p>
               </Link>
             </div>
-            <div className="col-lg-2 col-md-3  msgcol ">
+            <div className="col-lg-2 col-md-3  col-sm-3 msgcol ">
               <strong className="head">Capabilities</strong>
               <Link className="Link">
                 <p className="address1">Investment Banking </p>
@@ -792,7 +792,7 @@ class LowerSection extends React.Component {
                 <p className="address">Research </p>
               </Link>
             </div>
-            <div className="col-lg-2 col-md-3 msgcol ">
+            <div className="col-lg-2 col-md-3  col-sm-3 msgcol ">
               <strong>Resources</strong>
               <Link className="Link">
                 <p className="address1">Privacy Policy </p>
@@ -833,11 +833,12 @@ class LowerSection extends React.Component {
                   <div className="col-2">
                       <img src={imag1}/>
                   </div>
+                  <div className="col-1"></div>
                   <div className="col-2">
                       <img src={imag2}/>
                   </div>
-                  <div className="col-5"></div>
-                  <div style={{background:"#F4F5F7" ,display:"flex"}}  className="col-3">
+                  <div className="col-4"></div>
+                  <div style={{background:"#F4F5F7" ,display:"flex"}}  className="col-lg-3 col-md-6">
                     <div className="tagdiv1">
                     <p style={{color:"#9FA6B2" }}>Credit Rating</p> 
                     <p className="footertags">A-/A-2</p>

@@ -564,7 +564,7 @@ width: 150px;
   justify-content: center;
   border-radius  : 10px;
   margin         : 40px 0 0;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .graph-loader {
@@ -598,11 +598,11 @@ width: 150px;
   } */
   .selectassetdiv{
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     height: 500px;
     /* margin-left: 55px; */
     /* width: 480px !important; */
-  margin-left: 30px;
+  /* margin-left: 30px; */
   background-color: white;
   }
 
@@ -610,10 +610,10 @@ width: 150px;
 .selectassetdiv{
   border-radius: 10px;
   margin-right: 10px;
-  height: 500px;
+  height: 530px;
   /* margin-left: 55px; */
   /* width: 480px !important; */
-/* margin-left: 60px; */
+/* margin-left: 20px; */
 background-color: white;
 }
 @media only screen and (max-width: 767px) {
