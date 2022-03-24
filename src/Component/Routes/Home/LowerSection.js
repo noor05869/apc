@@ -485,7 +485,7 @@ class LowerSection extends React.Component {
       <>
         <div className="container-fluid  cardsdiv">
           <div className="row stock-amount upper-card justify-content-center  ">
-            <div className="col-lg-4 col-md-4 col-sm-4 py-5  selectassetdiv">
+            <div className="col-lg-4 col-md-4 col-sm-10 py-5  selectassetdiv">
               <div className="stock-amount-main">
                 <p className="text-left font-14 font-light">
                   <strong>Select Assets</strong>
@@ -587,7 +587,7 @@ class LowerSection extends React.Component {
                 </div>
               </div>
               <div className="row ">
-                <div className="text-center col-lg-5 col-md-5   expectChngdiv">
+                <div className="text-center col-lg-5 col-md-5  col-sm-10 expectChngdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Change
                     {this.state.subTypeCode.length > 1 && (
@@ -608,7 +608,7 @@ class LowerSection extends React.Component {
                   </h3>
                 </div>
 <div className="col-lg-1 col-md-1"></div>
-                <div className="text-center col-lg-5   col-md-5   expectRevdiv">
+                <div className="text-center col-lg-5 col-sm-10  col-md-5   expectRevdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Revenue
                     {this.state.subTypeCode.length > 1 && (
@@ -753,14 +753,14 @@ class LowerSection extends React.Component {
         <div className="container-fluid  footerdiv">
           <div className="row  ">
             <div className="col-1"></div>
-            <div className="col-4 msgcol">
+            <div className="col-lg-4 col-md-2  msgcol">
               <APCLogo />
               {/* <button className="btn btn-primary">Contact us</button> */}
               {/* <a href="#" className="btn_secondary">
         <strong>
         Contact Us</strong></a> */}
             </div>
-            <div className="col-lg-1  "></div>
+            <div className="col-lg-1 col-md-1 "></div>
 
             <div className="col-lg-2 col-md-2  col-sm-3 msgcol ">
               <strong className="head">Compant</strong>
@@ -812,7 +812,7 @@ class LowerSection extends React.Component {
             <hr />
             <div className="row">
               <strong className="logos">
-                © 2022 Next Capital Limited. All Rights 
+                © 2022 Next Capital Limited. All Rights  Reserved
                 <span> <Facebook/> <Twitter/> <Instagram/> <LinkedIn/>   </span>
                 
               </strong>
@@ -830,21 +830,21 @@ class LowerSection extends React.Component {
                 </p>
               </div>
               <div className="row">
-                  <div className="col-2">
+                  <div className="col-lg-1 col-md-1">
                       <img src={imag1}/>
                   </div>
-                  <div className="col-1"></div>
-                  <div className="col-2">
+                  <div className="col-lg-1 col-md-2"></div>
+                  <div className="col-lg-1 col-md-3" >
                       <img src={imag2}/>
                   </div>
-                  <div className="col-4"></div>
-                  <div style={{background:"#F4F5F7" ,display:"flex"}}  className="col-lg-3 col-md-6">
+                  <div className="col-lg-4 col-md-2"></div>
+                  <div   className="col-lg-4 col-md-6 ratingdiv">
                     <div className="tagdiv1">
-                    <p style={{color:"#9FA6B2" }}>Credit Rating</p> 
+                    <p className="rating">Credit Rating</p> 
                     <p className="footertags">A-/A-2</p>
                     </div>
                     <div className="tagdiv">
-                    <p style={{color:"#9FA6B2"}}>Management Rating</p> 
+                    <p className="rating">Management Rating</p> 
                     <p className="footertags">BMR2++</p>
                     </div>
                     </div>
