@@ -483,9 +483,9 @@ class LowerSection extends React.Component {
   render() {
     return (
       <>
-        <div className="container-fluid cardsdiv">
-          <div className="row stock-amount upper-card  ">
-            <div className="col-lg-3 col-sm-4  py-5  selectassetdiv">
+        <div className="container-fluid  cardsdiv">
+          <div className="row stock-amount upper-card justify-content-center  ">
+            <div className="col-lg-4 col-md-4 col-sm-4 py-5  selectassetdiv">
               <div className="stock-amount-main">
                 <p className="text-left font-14 font-light">
                   <strong>Select Assets</strong>
@@ -587,7 +587,7 @@ class LowerSection extends React.Component {
                 </div>
               </div>
               <div className="row ">
-                <div className="text-center   expectChngdiv">
+                <div className="text-center col-lg-5 col-md-5   expectChngdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Change
                     {this.state.subTypeCode.length > 1 && (
@@ -608,7 +608,7 @@ class LowerSection extends React.Component {
                   </h3>
                 </div>
 
-                <div className="text-center  expectRevdiv">
+                <div className="text-center col-lg-5   col-md-5   expectRevdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Revenue
                     {this.state.subTypeCode.length > 1 && (
@@ -633,7 +633,7 @@ class LowerSection extends React.Component {
               </div>
             </div>
             {/* <div className="col-md-1"></div> */}
-            <div className="col-lg-7 mb-p-0  chardiv">
+            <div className="col-lg-7 col-xl-7 col-md-7 col-sm-4 mb-p-0  chardiv">
               <div className="graph-loader">
                 {this.state.loading == true && <LinearProgress />}
               </div>
