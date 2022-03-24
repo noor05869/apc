@@ -725,18 +725,18 @@ class LowerSection extends React.Component {
         <div className="container-fluid  addressdiv">
           <div className="row  align-items-center">
             <div className="col-1"></div>
-            <div className="col-4 msgcol">
+            <div className="col-lg-4 col-md-4 msgcol">
               <h2 className="msg">
                 For further inquires or assistance, please contact us via email.
               </h2>
               {/* <button className="btn btn-primary">Contact us</button> */}
               <a href="#" className="btn_secondary">
-                <strong>Contact Us</strong>
+                <strong  >Contact Us</strong>
               </a>
             </div>
             <div className="col-3"></div>
 
-            <div className="col-2 msgcol ">
+            <div className="col-lg-2 col-md-4 msgcol ">
               <strong>Karachi</strong>
               <p className="address">
                 2nd Floor Imperial Court Building, Dr. Ziauddin Ahmed Road,
@@ -760,9 +760,9 @@ class LowerSection extends React.Component {
         <strong>
         Contact Us</strong></a> */}
             </div>
-            <div className="col-1"></div>
+            <div className="col-lg-1  "></div>
 
-            <div className="col-2 msgcol ">
+            <div className="col-lg-2 col-md-2 msgcol ">
               <strong className="head">Compant</strong>
               <Link  className="Link">
                 <p   className="address1">about Us </p>
@@ -777,7 +777,7 @@ class LowerSection extends React.Component {
                 <p className="address">Careers </p>
               </Link>
             </div>
-            <div className="col-2 msgcol ">
+            <div className="col-lg-2 col-md-3  msgcol ">
               <strong className="head">Capabilities</strong>
               <Link className="Link">
                 <p className="address1">Investment Banking </p>
@@ -792,7 +792,7 @@ class LowerSection extends React.Component {
                 <p className="address">Research </p>
               </Link>
             </div>
-            <div className="col-2 col-md-auto msgcol ">
+            <div className="col-lg-2 col-md-3 msgcol ">
               <strong>Resources</strong>
               <Link className="Link">
                 <p className="address1">Privacy Policy </p>
