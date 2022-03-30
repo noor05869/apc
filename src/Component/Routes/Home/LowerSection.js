@@ -844,7 +844,7 @@ Lahore, Pakistan
                   <div className="col-lg-1 col-md-3" >
                       <img src={imag2}/>
                   </div>
-                  <div className="col-lg-7 col-md-2"></div>
+                  <div className="col-lg-7 col-md-3 col-sm-4"></div>
                   <div   className="col-lg-3 col-md-6 ratingdiv">
                     <div className="tagdiv1">
                     <p className="rating">Credit Rating</p> 
