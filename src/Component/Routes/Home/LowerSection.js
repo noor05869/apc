@@ -484,7 +484,7 @@ class LowerSection extends React.Component {
     return (
       <>
         <div className="container-fluid  my-8  cardsdiv">
-          <div className="row stock-amount upper-card   ">
+          <div className="row stock-amount upper-card  cardsrow ">
             <div className="col-lg-4 col-md-4 col-sm-10 py-5  selectassetdiv">
             <div className="stock-amount-main">
                 <p className=" marginfourty text-left font-14 font-light">
@@ -611,7 +611,7 @@ class LowerSection extends React.Component {
                     {this.state.obtPerct.toFixed(2)} %
                   </h3>
                 </div>
-<div className="col-lg-2 col-md-1"></div>
+{/* <div className="col-lg-2 col-md-1"></div> */}
                 <div className="text-center col-lg-5 col-sm-10  col-md-5   expectRevdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Revenue
@@ -637,7 +637,7 @@ class LowerSection extends React.Component {
               </div>
             </div>
             {/* <div className="col-md-1"></div> */}
-            <div className="col-lg-6 col-xl-7 col-md-7 col-sm-7 mb-p-0  chardiv">
+            <div className="col-lg-7 col-xl-7 col-md-7 col-sm-7 mb-p-0  chardiv">
               <div className="graph-loader">
                 {this.state.loading == true && <LinearProgress />}
               </div>
