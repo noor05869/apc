@@ -500,7 +500,7 @@ class LowerSection extends React.Component {
                       displayEmpty
                       inputProps={{ "aria-label": "Without label" }}
                       id="market_select"
-                      className="font-bold font-40"
+                      className="font-bold font-40 select"
                       disabled={this.state.loading}
                     >
                       <MenuItem value={"stocks"}>Stocks</MenuItem>
@@ -816,7 +816,7 @@ Lahore, Pakistan
           </div>
           <div className="container-fluid 
           ">
-            <div className="row footerow ">
+            <div className="row nogutter footerow ">
             <hr />
               <strong className="logos">
                 © 2022 Next Capital Limited. All Rights  Reserved
