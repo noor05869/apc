@@ -6,13 +6,13 @@ import LowerSection from './LowerSection';
 const Home = () => {
     return (
         <>
+                    <Navbar />
             <div className="Background">
                 <div className=" Background1">
-                    <Navbar />
-                    <div className="container ">
-                        <div className="row pb-5">
+                    <div className="container marginLeftHead ">
+                        <div className="row ">
                             <div className="col-12 col-md-6 center">
-                                <div className="p-4">
+                                <div className="">
                                     <h2 className='header'>Assets Performance Comparator</h2>
                                     {/* <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation </p> */}
 

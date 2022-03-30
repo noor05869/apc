@@ -1,12 +1,12 @@
 
 import trg from '../../../Images/trg.jpeg'
 import tplp from '../../../Images/stocks/tplp.png'
-import epcl from '../../../Images/stocks/image 15.svg'
-import avn from '../../../Images/stocks/avnn.svg'
+import epcl from '../../../Images/stocks/image 15.png'
+import avn from '../../../Images/stocks/image 14.png'
 // import avn from '../../../Images/stocks/avc.png'
 
-import meezan from '../../../Images/stocks/image 13.svg'
-import systems from "../../../Images/stocks/images.svg"
+import meezan from '../../../Images/stocks/image 13.png'
+import systems from "../../../Images/stocks/image 12.png"
 
 import ablStockFund from '../../../Images/abl-stock-fund1.png'
 import ublStock from '../../../Images/ubl-fund1.png'

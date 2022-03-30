@@ -18,8 +18,8 @@ import BarChartData from "../Data/BarChartData";
 import TreeGraphData from "../Data/TreeGraphData";
 import ApexTreeChart from "./ApexTreeChart";
 import { Link } from "react-router-dom";
-import imag2 from "../../../Images/image 5.svg"
-import imag1 from "../../../Images/image 6.svg"
+import imag2 from "../../../Images/image 5.png"
+import imag1 from "../../../Images/image 6.png"
 
 class LowerSection extends React.Component {
   constructor(props) {
@@ -483,16 +483,16 @@ class LowerSection extends React.Component {
   render() {
     return (
       <>
-        <div className="container-fluid  cardsdiv">
-          <div className="row stock-amount upper-card justify-content-center  ">
+        <div className="container-fluid  my-8  cardsdiv">
+          <div className="row stock-amount upper-card   ">
             <div className="col-lg-4 col-md-4 col-sm-10 py-5  selectassetdiv">
-              <div className="stock-amount-main">
-                <p className="text-left font-14 font-light">
+            <div className="stock-amount-main">
+                <p className=" marginfourty text-left font-14 font-light">
                   <strong>Select Assets</strong>
                 </p>
 
-                <div className="d-flex align-items-center">
-                  <h2 className=" col-12 font-bold font-40 stock-amount-main-text">
+                <div className=" marginfourty">
+                  <h2 className=" col-12  font-bold font-40 stock-amount-main-text">
                     {/* <strong>What if you invested in</strong> */}
                     <Select
                       value={this.state.type}
@@ -515,57 +515,61 @@ class LowerSection extends React.Component {
                   </h2>
                 </div>
               </div>
-              <div className="row mt-5 ">
-                <div className="col-md-12 col-sm-8 ">
-                  <p className="text-grey mb-0 font-medium font-14">
-                    Investment Amount
-                  </p>
-                  <div className="d-flex align-items-baseline">
-                    <h3 className="font-32 font-bold">
-                      {this.state.amountMarks[
-                        this.state.amount
-                      ].scaledValue.toLocaleString()}
-                    </h3>
-                    <p className="font-16 font-bold pl-1">
-                      <strong>PKR</strong>
-                    </p>
-                  </div>
-                  <div className="stock-amount-slider">
-                    <Slider
-                      aria-label="Always visible"
-                      defaultValue={2}
-                      getAriaValueText={this.valuetext}
-                      step={null}
-                      scale={this.state.amountMarks.scaledValue}
-                      marks={this.state.amountMarks}
-                      valueLabelFormat={this.numFormatter}
-                      max={this.state.amountMarks.length - 1}
-                      min={0}
-                      valueLabelDisplay="auto"
-                      onChangeCommitted={(event, newValue) =>
-                        this.handleAmountChange(event, newValue)
-                      }
-                      disabled={this.state.loading}
-                    />
-                  </div>
-                </div>
+              <div className="row mt-5">
+                <div className="marginfourty">
+              <div className="   col-lg-11 col-md-11 col-sm-8 ">
+                 
+                 <div className=" displayflex d-flex align-items-baseline">
+                 <p className="text-grey mb-0 font-medium font-14  " >
+                   Investment Amount
+                 </p>
+                   <h3 className="font-32 font-bold flexbar">
+                     {this.state.amountMarks[
+                       this.state.amount
+                     ].scaledValue.toLocaleString()}
+                   <p className="font-16 font-bold pl-1  ">
+                     <strong>PKR</strong>
+                   </p> </h3>
+                  
+                 </div>
+                 <div className="stock-amount-slider">
+                   <Slider
+                     aria-label="Always visible"
+                     defaultValue={2}
+                     getAriaValueText={this.valuetext}
+                     step={null}
+                     scale={this.state.amountMarks.scaledValue}
+                     marks={this.state.amountMarks}
+                     valueLabelFormat={this.numFormatter}
+                     max={this.state.amountMarks.length - 1}
+                     min={0}
+                     valueLabelDisplay="auto"
+                     onChangeCommitted={(event, newValue) =>
+                       this.handleAmountChange(event, newValue)
+                     }
+                     disabled={this.state.loading}
+                   />
+                 </div>
+               </div></div>
               </div>
 
               <div className="row mt-3">
-                <div className="col-md-12 col-sm-8">
+                <div className="  marginfourty col-lg-11 col-md-12 col-sm-8">
+                  <div className=" displayflex align-items-baseline">
                   <p className="text-grey font-medium font-14 mb-0">Term</p>
-                  <div className="d-flex align-items-baseline">
-                    <h3 className="font-32 font-bold">
+                    <h3 className="font-32 font-bold flexbar">
                       {this.state.timeMarks[this.state.time].scaledValue}
-                    </h3>
-                    <p className="font-16 font-bold  pl-1">
+                      <p className="font-16 font-bold month  pl-1">
                       <strong>
                         {this.state.timeMarks[this.state.time].span}
                       </strong>
                     </p>
+                    </h3>
+                   
                   </div>
 
                   {/* <h3 className="font-32 font-bold" >{this.state.timeMarks[this.state.time].name}</h3> */}
+                  
                   <div className="stock-amount-slider mb-5">
                     <Slider
                       aria-label="Always visible"
@@ -586,8 +590,8 @@ class LowerSection extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="row ">
-                <div className="text-center col-lg-5 col-md-5  col-sm-10 expectChngdiv">
+              <div className="row  ">
+                <div className="text-center col-lg-6 col-md-5   col-sm-10 expectChngdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Change
                     {this.state.subTypeCode.length > 1 && (
@@ -607,8 +611,8 @@ class LowerSection extends React.Component {
                     {this.state.obtPerct.toFixed(2)} %
                   </h3>
                 </div>
-<div className="col-lg-1 col-md-1"></div>
-                <div className="text-center col-lg-5 col-sm-10  col-md-5   expectRevdiv">
+{/* <div className="col-lg-1 col-md-1"></div> */}
+                <div className="text-center col-lg-6 col-sm-10  col-md-5   expectRevdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Revenue
                     {this.state.subTypeCode.length > 1 && (
@@ -633,7 +637,7 @@ class LowerSection extends React.Component {
               </div>
             </div>
             {/* <div className="col-md-1"></div> */}
-            <div className="col-lg-7 col-xl-7 col-md-7 col-sm-7 mb-p-0  chardiv">
+            <div className="col-lg-6 col-xl-7 col-md-7 col-sm-7 mb-p-0  chardiv">
               <div className="graph-loader">
                 {this.state.loading == true && <LinearProgress />}
               </div>
@@ -644,7 +648,7 @@ class LowerSection extends React.Component {
 
                                             {this.state.subTypeCode.length > 1 &&
 
-                                                <Tooltip overlayStyle={{ maxWidth: '350px' }} title="This percentage change is based on investment in two individual assets " placement="bottom" arrow
+                                                <Tooltip overlay le={{ maxWidth: '350px' }} title="This percentage change is based on investment in two individual assets " placement="bottom" arrow
                                                 >
                                                     <span className="ml10">
                                                         <HelpIcon />
@@ -723,9 +727,9 @@ class LowerSection extends React.Component {
         </div>
 
         <div className="container-fluid  addressdiv">
-          <div className="row  ">
-            <div className="col-1"></div>
-            <div className="col-lg-4 col-md-4 msgcol">
+          <div className="row addressrow  ">
+            {/* <div className="col-1"></div> */}
+            <div className="col-lg-5 col-md-4 msgcol">
               <h2 className="msg">
                 For further inquires or assistance, please contact us via email.
               </h2>
@@ -744,25 +748,27 @@ class LowerSection extends React.Component {
               </p>
               <strong>Lahore</strong>
               <p className="address">
-                2nd Floor Imperial Court Building, Dr. Ziauddin Ahmed Road,
-                Karachi, Pakistan{" "}
+              63-A, Agora Eden City 
+DHA Phase VIII, 
+Lahore, Pakistan
               </p>
             </div>
           </div>
         </div>
+
         <div className="container-fluid  footerdiv">
-          <div className="row  ">
-            <div className="col-1"></div>
-            <div className="col-lg-4 col-md-2  msgcol">
+          <div className="row logorow ">
+            {/* <div className="col-1"></div> */}
+            <div className="col-lg-4 col-md-2  logofooter">
               <APCLogo />
               {/* <button className="btn btn-primary">Contact us</button> */}
               {/* <a href="#" className="btn_secondary">
         <strong>
         Contact Us</strong></a> */}
             </div>
-            <div className="col-lg-1 col-md-1 "></div>
+            <div className="col-lg-2 col-md-1 "></div>
 
-            <div className="col-lg-2 col-md-2  col-sm-3 msgcol ">
+            <div className="col-lg-2 col-md-2 col-md-3   col-sm-3 msgcol1 ">
               <strong className="head">Compant</strong>
               <Link  className="Link">
                 <p   className="address1">about Us </p>
@@ -777,7 +783,7 @@ class LowerSection extends React.Component {
                 <p className="address">Careers </p>
               </Link>
             </div>
-            <div className="col-lg-2 col-md-3  col-sm-3 msgcol ">
+            <div className="col-lg-2 col-md-3  col-sm-3 msgcol1 ">
               <strong className="head">Capabilities</strong>
               <Link className="Link">
                 <p className="address1">Investment Banking </p>
@@ -792,7 +798,7 @@ class LowerSection extends React.Component {
                 <p className="address">Research </p>
               </Link>
             </div>
-            <div className="col-lg-2 col-md-3  col-sm-3 msgcol ">
+            <div className="col-lg-2 col-md-3  col-sm-3 msgcol1 ">
               <strong>Resources</strong>
               <Link className="Link">
                 <p className="address1">Privacy Policy </p>
@@ -808,12 +814,13 @@ class LowerSection extends React.Component {
               </Link>
             </div>
           </div>
-          <div className="container">
+          <div className="container-fluid 
+          ">
+            <div className="row footerow ">
             <hr />
-            <div className="row">
               <strong className="logos">
                 © 2022 Next Capital Limited. All Rights  Reserved
-                <span> <Facebook/> <Twitter/> <Instagram/> <LinkedIn/>   </span>
+                <span> <Facebook className="space" /> <Twitter  className="space" /> <Instagram  className="space" /> <LinkedIn  className="space" />   </span>
                 
               </strong>
               <label className="dis">Disclaimer</label>
@@ -829,16 +836,16 @@ class LowerSection extends React.Component {
                   domain/competence shall not be entertained.”
                 </p>
               </div>
-              <div className="row">
+              <div className="row lastfooter">
                   <div className="col-lg-1 col-md-1">
                       <img src={imag1}/>
                   </div>
-                  <div className="col-lg-1 col-md-2"></div>
+                  {/* <div className="col-lg-1 col-md-2"></div> */}
                   <div className="col-lg-1 col-md-3" >
                       <img src={imag2}/>
                   </div>
-                  <div className="col-lg-4 col-md-2"></div>
-                  <div   className="col-lg-4 col-md-6 ratingdiv">
+                  <div className="col-lg-7 col-md-2"></div>
+                  <div   className="col-lg-3 col-md-6 ratingdiv">
                     <div className="tagdiv1">
                     <p className="rating">Credit Rating</p> 
                     <p className="footertags">A-/A-2</p>

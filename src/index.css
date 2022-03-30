@@ -14,6 +14,7 @@
 }
 body{
   background-color: #f8f9fa !important;
+  overflow-x: hidden;
 }
 .Background1 {
   background: linear-gradient(276.35deg, #82297D 0%, #E12C61 151.04%), #E92A5E; ;
@@ -460,7 +461,8 @@ li.MuiMenuItem-root {
 }
 
 .stock-amount-slider {
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  /* width: 425px ; */
 }
 
 div#market_select {
@@ -494,6 +496,7 @@ font-weight: 800 !important;
 font-size: 64px !important;
 line-height: 72px !important;
 /* or 112% */
+margin-top:140px;
 
 letter-spacing: -0.04em !important;
 
@@ -564,7 +567,8 @@ width: 150px;
   justify-content: center;
   border-radius  : 10px;
   margin         : 40px 0 0;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
+  margin-top: 80px;
 }
 
 .graph-loader {
@@ -599,7 +603,8 @@ width: 150px;
   .selectassetdiv{
     border-radius: 10px;
     margin-right: 20px;
-    height: 500px;
+    margin-left: 80px !important;
+    height: 450px;
     /* margin-left: 55px; */
     /* width: 480px !important; */
   /* margin-left: 30px; */
@@ -610,8 +615,10 @@ width: 150px;
 .selectassetdiv{
   border-radius: 10px;
   margin-right: 20px;
-  height: 530px;
+  height: 490px;
   /* margin-left: 55px; */
+  margin-left: 80px !important;
+
   /* width: 480px !important; */
 /* margin-left: 20px; */
 background-color: white;
@@ -720,12 +727,14 @@ background-color: white;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  margin-top: 24px !important;
 }
 
 .addressdiv{
 /* height: 400px; */
 background-color: white;
-border-bottom: inset;
+
+/* border-bottom: inset; */
 
 }
 .footerdiv{
@@ -755,7 +764,7 @@ border-bottom: inset;
   ;
 }
 .msgcol{
-  margin-top: 70px !important;
+  margin-top: 120px !important;
 }
 .Link{
   text-decoration: none;
@@ -796,6 +805,7 @@ border-bottom: inset;
 .dis{
   margin-top: 24px !important;
   font-weight: 800;
+  margin-top: 40px !important;
 }
 .disclaimer{
   color: #9FA6B2
@@ -868,6 +878,19 @@ color: #E92A5E;
   }
   
    }
+   @media (min-width: 1200px){
+   .chardiv{
+    /* width: 890px !important; */
+    height: 750px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+   
+    width: 56.333333% !important;
+
+  }}
+
+
    .chardiv{
     /* width: 890px !important; */
     height: 750px;
@@ -883,5 +906,73 @@ color: #E92A5E;
   background-color: #F4F5F7;
   display: flex;
   border-radius: 10px;
+  margin-bottom: 30px !important;
   /* margin-top: 5px !important; */
+}
+.marginLeftHead{
+  margin-left: 68px !important;
+}
+.containermargin{
+  margin-left: 80px !important;
+  margin-right: 80px !important;
+
+}
+/* .container-fluid{
+  margin-left: 80px !important;
+  margin-right: 80px !important;
+
+} */
+.marginLeftHead{
+  margin-left: 68px !important;
+}
+.marginLeft{
+  margin-left: 80px !important;
+}
+.marginRight{
+  margin-right: 80px !important;
+}
+.marginfourty{
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.marginfright{
+margin-right: 40px;
+}
+.marginleft{
+  margin-left: 80px !important
+}
+.margineghity{
+  margin-left: 68px !important;
+  margin-right: 68px !important;
+}
+.displayflex{
+  display: flex;
+  justify-content: space-between;
+}
+.amount{
+width: 200px;
+}
+.flexbar{
+  display: flex;
+  /* margin-right: 29; */
+}
+.logorow{
+  margin-left: 80px !important;
+margin-bottom: 64px !important;
+margin-right: 40px !important;
+}
+
+.footerow{
+  margin-left: 80px !important;
+  margin-right: 80px !important;
+}
+.addressrow{
+  margin-left: 80px !important;
+  margin-right: 50px !important;
+}
+.space{
+  margin-left: 24px;
+}
+.lastfooter{
+  align-items: center;
 }
