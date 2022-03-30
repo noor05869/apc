@@ -591,7 +591,7 @@ class LowerSection extends React.Component {
                 </div>
               </div>
               <div className="row  ">
-                <div className="text-center col-lg-6 col-md-5   col-sm-10 expectChngdiv">
+                <div className="text-center col-lg-5 col-md-5   col-sm-10 expectChngdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Change
                     {this.state.subTypeCode.length > 1 && (
@@ -611,8 +611,8 @@ class LowerSection extends React.Component {
                     {this.state.obtPerct.toFixed(2)} %
                   </h3>
                 </div>
-{/* <div className="col-lg-1 col-md-1"></div> */}
-                <div className="text-center col-lg-6 col-sm-10  col-md-5   expectRevdiv">
+<div className="col-lg-2 col-md-1"></div>
+                <div className="text-center col-lg-5 col-sm-10  col-md-5   expectRevdiv">
                   <span className="text-grey font-medium font-14">
                     Expected Revenue
                     {this.state.subTypeCode.length > 1 && (
