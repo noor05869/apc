@@ -515,8 +515,8 @@ class LowerSection extends React.Component {
                   </h2>
                 </div>
               </div>
-              <div className="row mt-5">
-                <div className="marginfourty">
+              <div className="row mt-5 sliderrow">
+               
               <div className="   col-lg-11 col-md-11 col-sm-8 ">
                  
                  <div className=" displayflex d-flex align-items-baseline">
@@ -550,11 +550,11 @@ class LowerSection extends React.Component {
                      disabled={this.state.loading}
                    />
                  </div>
-               </div></div>
+               </div> 
               </div>
 
-              <div className="row mt-3">
-                <div className="  marginfourty col-lg-11 col-md-12 col-sm-8">
+              <div className="row mt-3 sliderrow">
+                <div className="   col-lg-11 col-md-12 col-sm-8">
                   <div className=" displayflex align-items-baseline">
                   <p className="text-grey font-medium font-14 mb-0">Term</p>
                     <h3 className="font-32 font-bold flexbar">
@@ -757,7 +757,7 @@ Lahore, Pakistan
         </div>
 
         <div className="container-fluid  footerdiv">
-          <div className="row logorow ">
+          <div className="row logorow no-gutter ">
             {/* <div className="col-1"></div> */}
             <div className="col-lg-4 col-md-2  logofooter">
               <APCLogo />
