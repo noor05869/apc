@@ -592,6 +592,7 @@ class LowerSection extends React.Component {
               </div>
               <div className="row  ">
                 <div className="text-center col-lg-5 col-md-5   col-sm-10 expectChngdiv">
+                  <div className="helpicon">
                 {this.state.subTypeCode.length > 1 && (
                       <Tooltip
                         overlayStyle={{ maxWidth: "350px" }}
@@ -599,11 +600,11 @@ class LowerSection extends React.Component {
                         placement="bottom"
                         arrow
                       >
-                          <span className=" helpicon ml10">
+                          <span className="  ml10">
                           <HelpIcon />
                         </span>
                       </Tooltip>
-                    )}
+                    )}</div>
                   <span className="text-grey font-medium font-14">
                     Expected Change
                    
@@ -614,6 +615,7 @@ class LowerSection extends React.Component {
                 </div>
 {/* <div className="col-lg-2 col-md-1"></div> */}
                 <div className="text-center col-lg-5 col-sm-10  col-md-5   expectRevdiv">
+                  <div className="helpicon" >
                 {this.state.subTypeCode.length > 1 && (
                       <Tooltip
                         overlayStyle={{ maxWidth: "350px" }}
@@ -621,11 +623,11 @@ class LowerSection extends React.Component {
                         placement="bottom"
                         arrow
                       >
-                         <span className=" helpicon ml10">
+                         <span className="  ml10">
                           <HelpIcon />
                         </span>
                       </Tooltip>
-                    )}
+                    )}</div>
                   <span className="text-grey font-medium font-14">
                     Expected Revenue
                    
