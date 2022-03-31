@@ -8,7 +8,7 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-light  navbar-expand-md bg-white">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/">
+                    <NavLink className="navbar-brand navlogo" to="/">
                         {/* <img src={Logo} alt="Next Capital" className='logo' /> */}
                         <APCLogo />
                     </NavLink>
@@ -30,9 +30,9 @@ const Navbar = () => {
                             <li className="nav-item mx-3">
                                 <NavLink className="nav-link text-gray" to="/">APC</NavLink>
                             </li>
-                            {/* <li className="nav-item mx-3">
-                                |
-                            </li> */}
+                            <li className="nav-item mx-3">
+                                <hr className='navline'/>
+                            </li>
                             <li className="nav-item mx-3">
 
                                 <button class="btn text-gray bodr-white" type="button">LOGIN</button>

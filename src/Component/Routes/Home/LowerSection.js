@@ -592,44 +592,46 @@ class LowerSection extends React.Component {
               </div>
               <div className="row  ">
                 <div className="text-center col-lg-5 col-md-5   col-sm-10 expectChngdiv">
-                  <span className="text-grey font-medium font-14">
-                    Expected Change
-                    {this.state.subTypeCode.length > 1 && (
+                {this.state.subTypeCode.length > 1 && (
                       <Tooltip
                         overlayStyle={{ maxWidth: "350px" }}
                         title="This percentage change is based on investment in two individual assets "
                         placement="bottom"
                         arrow
                       >
-                        <span className="ml10">
+                          <span className=" helpicon ml10">
                           <HelpIcon />
                         </span>
                       </Tooltip>
                     )}
+                  <span className="text-grey font-medium font-14">
+                    Expected Change
+                   
                   </span>
-                  <h3 className="graphPer font-bold font-32">
+                  <h3 className="graphPer font-bold font-32 amount">
                     {this.state.obtPerct.toFixed(2)} %
                   </h3>
                 </div>
 {/* <div className="col-lg-2 col-md-1"></div> */}
                 <div className="text-center col-lg-5 col-sm-10  col-md-5   expectRevdiv">
-                  <span className="text-grey font-medium font-14">
-                    Expected Revenue
-                    {this.state.subTypeCode.length > 1 && (
+                {this.state.subTypeCode.length > 1 && (
                       <Tooltip
                         overlayStyle={{ maxWidth: "350px" }}
                         title="This expected revenue is based on investment in two individual assets"
                         placement="bottom"
                         arrow
                       >
-                        <span className="ml10">
+                         <span className=" helpicon ml10">
                           <HelpIcon />
                         </span>
                       </Tooltip>
                     )}
+                  <span className="text-grey font-medium font-14">
+                    Expected Revenue
+                   
                   </span>
                   <div className="d-flex align-items-baseline justify-content-center">
-                    <h3 className="font-32 font-bold">
+                    <h3 className="font-32 font-bold amount">
                       {this.state.AmountBecomed.toLocaleString()}
                     </h3>
                   </div>

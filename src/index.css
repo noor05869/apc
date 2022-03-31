@@ -64,6 +64,14 @@ color: #9FA6B2 !important;
   font-weight: bold !important;
   outline: none;
   border-radius: 8px !important;
+  margin-right: 68px !important;
+}
+
+.navline{
+  border: 1px solid #E5E7EB;
+transform: rotate(90deg);
+width: 32px;
+height: 0px;
 }
 .upper-card {
   margin-top: -135px !important;
@@ -548,9 +556,11 @@ span.MuiSlider-track.css-1gv0vcd-MuiSlider-track {
 }
 
 .stock-company {
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
-
+.navlogo{
+  margin-left: 68px !important;
+}
 .bottom-text i {
   color       : #e5386a;
   margin-right: 5px;
@@ -785,7 +795,7 @@ margin-left: 10px;
   .expectRevdiv{
     display: grid;
     background-color: white;
-      justify-content: center;
+      /* justify-content: center; */
       align-items: center;
       width:47.666667%  !important;
   margin-left: 16px;
@@ -797,12 +807,17 @@ margin-left: 10px;
     width:47.666667% !important;
     /* margin-left: 30px; */
     background-color: white !important;
-      justify-content: center;
+      /* justify-content: center; */
       align-items: center;
       height: 124px;
   
       border-radius: 10px;
   } 
+}
+.helpicon{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
 }
 
 
@@ -817,6 +832,7 @@ margin-left: 10px;
 }
 .disclaimer{
   margin-top: 30px;
+  font-size: 14px;
 }
 .dis{
   margin-top: 24px !important;
@@ -845,7 +861,7 @@ color: #E92A5E;
 .tagdiv1{
   display: grid;
   margin-right: 60px;
-  margin-left: 24px !important
+  margin-left: 17px !important
 
 }
 
@@ -986,7 +1002,7 @@ margin-right: 40px !important;
   margin-right: 50px !important;
 }
 .space{
-  margin-left: 24px;
+  margin-left: 15px;
 }
 .lastfooter{
   align-items: center;
@@ -1020,4 +1036,7 @@ margin-right: 40px !important;
 
 .borderline{
   border: 1px solid #E2E8F0;
+}
+.amount{
+  margin-bottom: 15px;
 }

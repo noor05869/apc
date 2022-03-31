@@ -6,7 +6,9 @@ import LowerSection from './LowerSection';
 const Home = () => {
     return (
         <>
+        <div className='row '>
                     <Navbar />
+                    </div>
             <div className="Background">
                 <div className=" Background1">
                     <div className="container marginLeftHead ">
