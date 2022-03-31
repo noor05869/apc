@@ -733,6 +733,7 @@ background-color: white;
 .addressdiv{
 /* height: 400px; */
 background-color: white;
+border-bottom: 1px solid #E2E8F0 !important;
 
 /* border-bottom: inset; */
 
@@ -809,8 +810,8 @@ margin-left: 10px;
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 60px;
-    width: 157px;
+  height: 63px;
+    width: 180px;
     margin-left: 5px;
     border-radius: 10px;
 }
@@ -989,6 +990,8 @@ margin-right: 40px !important;
 }
 .lastfooter{
   align-items: center;
+  margin-top: 8px !important;
+  margin-bottom: 87px !important;
 }
 
 .cardsrow{
@@ -1007,4 +1010,14 @@ margin-right: 40px !important;
 }
 .select{
   border-radius: 8px !important;
+}
+.logofooter{
+  margin-top: 73px !important;
+}
+.msgcol1{
+  margin-top: 73px !important;
+}
+
+.borderline{
+  border: 1px solid #E2E8F0;
 }

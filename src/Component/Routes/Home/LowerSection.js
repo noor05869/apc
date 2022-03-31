@@ -753,6 +753,7 @@ DHA Phase VIII,
 Lahore, Pakistan
               </p>
             </div>
+          {/* <hr/> */}
           </div>
         </div>
 
@@ -817,14 +818,14 @@ Lahore, Pakistan
           <div className="container-fluid 
           ">
             <div className="row nogutter footerow ">
-            <hr />
+            <hr className="borderline" />
               <strong className="logos">
                 © 2022 Next Capital Limited. All Rights  Reserved
                 <span> <Facebook className="space" /> <Twitter  className="space" /> <Instagram  className="space" /> <LinkedIn  className="space" />   </span>
                 
               </strong>
-              <label className="dis">Disclaimer</label>
               <div className="row">
+              <label className="dis">Disclaimer</label>
                 <p className="disclaimer">
                   “In case your complaint has not been properly redressed by us,
                   you may lodge your complaint with Securities and Exchange
