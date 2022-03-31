@@ -774,9 +774,9 @@ Lahore, Pakistan
             <div className="col-lg-2 col-md-1 "></div>
 
             <div className="col-lg-2 col-md-2 col-md-3   col-sm-3 msgcol1 ">
-              <strong className="head">Compant</strong>
+              <strong className="head">Company</strong>
               <Link  className="Link">
-                <p   className="address1">about Us </p>
+                <p   className="address1">About Us </p>
               </Link>
               <Link className="Link">
                 <p className="address">Investors </p>
