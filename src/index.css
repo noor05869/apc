@@ -1040,3 +1040,35 @@ margin-right: 40px !important;
 .amount{
   margin-bottom: 15px;
 }
+.css-1k51tf5-MuiTooltip-tooltip {
+  
+  background-color: #252F3F !important;
+  /* padding: 20px 10px 20px 10px; */
+
+  border-radius: 10px !important;
+  padding: 16px !important;
+  font-style: normal !important;
+font-weight: 500 !important;
+font-size: 14px !important;
+line-height: 20px !important;
+/* or 143% */
+width: 80% !important;
+
+letter-spacing: -0.04em !important;
+
+color: #FFFFFF !important;
+ 
+}
+/* .css-1k51tf5-MuiTooltip-tooltip {
+  background-color: yellow !important;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  padding: 4px 8px;
+  font-size: 0.6875rem;
+  max-width: 300px;
+  margin: 0;
+  word-wrap: break-word;
+  font-weight: 500;
+  position: relative;
+} */
