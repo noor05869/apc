@@ -484,8 +484,8 @@ class LowerSection extends React.Component {
   render() {
     return (
       <>
-        <div className="container-fluid  my-8  cardsdiv">
-          <div className="row stock-amount upper-card  cardsrow ">
+        <div className="container-fluid  my-8 wrapper cardsdiv">
+          <div className="row stock-amount upper-card ">
             <div className="col-lg-4 col-md-4 col-sm-10 py-5  selectassetdiv">
             <div className="stock-amount-main">
                 <p className=" marginfourty text-left font-14 font-light">
@@ -731,10 +731,11 @@ class LowerSection extends React.Component {
           </div>
         </div>
 
-        <div className="container-fluid  addressdiv">
-          <div className="row addressrow  ">
+        <div className="container-fluid   addressdiv">
+          <div className="wrapper">
+          <div className="row    ">
             {/* <div className="col-1"></div> */}
-            <div className="col-lg-5 col-md-4 msgcol">
+            <div className="col-lg-6 col-md-4 msgcol">
               <h2 className="msg">
                 For further inquires or assistance, please contact us via email.
               </h2>
@@ -743,9 +744,9 @@ class LowerSection extends React.Component {
                 <strong  >Contact Us</strong>
               </a>
             </div>
-            <div className="col-3"></div>
+            <div className="col-2"></div>
 
-            <div className="col-lg-2 col-md-4 msgcol ">
+            <div className="col-lg-3 col-md-4 msgcol ">
               <strong>Karachi</strong>
               <p className="address">
                 2nd Floor Imperial Court Building, Dr. Ziauddin Ahmed Road,
@@ -760,10 +761,11 @@ Lahore, Pakistan
             </div>
           {/* <hr/> */}
           </div>
-        </div>
+        </div></div>
 
         <div className="container-fluid  footerdiv">
-          <div className="row logorow no-gutter ">
+          <div className="wrapper">
+          <div className="row  no-gutter ">
             {/* <div className="col-1"></div> */}
             <div className="col-lg-4 col-md-2  logofooter">
               <APCLogo />
@@ -820,9 +822,13 @@ Lahore, Pakistan
               </Link>
             </div>
           </div>
+          </div>
+
+
           <div className="container-fluid 
           ">
-            <div className="row nogutter footerow ">
+            <div className="wrapper">
+            <div className="row nogutter  ">
             <hr className="borderline" />
               <strong className="logos">
                 © 2022 Next Capital Limited. All Rights  Reserved
@@ -843,15 +849,15 @@ Lahore, Pakistan
                 </p>
               </div>
               <div className="row lastfooter">
-                  <div className="col-lg-1 col-md-1">
+                  <div className="col-lg-2 col-md-1">
                       <img src={imag1}/>
                   </div>
                   {/* <div className="col-lg-1 col-md-2"></div> */}
-                  <div className="col-lg-1 col-md-3" >
+                  <div className="col-lg-3 col-md-3" >
                       <img src={imag2}/>
                   </div>
-                  <div className="col-lg-7 col-md-3 col-sm-4"></div>
-                  <div   className="col-lg-3 col-md-6 ratingdiv">
+                  <div className="col-lg-3 col-md-3 col-sm-4"></div>
+                  <div   className="col-lg-4 col-md-6 ratingdiv">
                     <div className="tagdiv1">
                     <p className="rating">Credit Rating</p> 
                     <p className="footertags">A-/A-2</p>
@@ -864,6 +870,7 @@ Lahore, Pakistan
               </div>
             </div>
           </div>
+        </div>
         </div>
       </>
     );

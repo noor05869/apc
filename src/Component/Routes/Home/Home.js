@@ -6,16 +6,17 @@ import LowerSection from './LowerSection';
 const Home = () => {
     return (
         <>
-        <div className='row '>
+        <div className='   '>
+                    {/* <div className='row '> */}
                     <Navbar />
-                    </div>
-            <div className="Background">
+                    {/* </div> */}
+            <div className="Background ">
                 <div className=" Background1">
                     <div className="container marginLeftHead ">
                         <div className="row ">
                             <div className="col-12 col-md-6 center">
-                                <div className="">
-                                    <h2 className='header'>Assets Performance Comparator</h2>
+                                <div className="wrapper">
+                                    <h2 className='header font-bold  '>Assets Performance Comparator</h2>
                                     {/* <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation </p> */}
 
                                     {/* <form className="AddedButton mt-5">
@@ -31,11 +32,13 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
+                <div className=" ">
                     <LowerSection />
                 </div>
                 {/* <LowerSection /> */}
             </div>
+            </div>
+
         </>
     );
 }

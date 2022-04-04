@@ -13,8 +13,17 @@
   src        : url("/src/font/futura/FuturaNowText-Rg.otf");
 }
 body{
-  background-color: #f8f9fa !important;
+  background-color: #F4F5F7 !important;
   overflow-x: hidden;
+}
+.maingrid{
+  width: 1280px !important;
+  margin:auto ;
+}
+.wrapper{
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .Background1 {
   background: linear-gradient(276.35deg, #82297D 0%, #E12C61 151.04%), #E92A5E; ;
@@ -74,7 +83,7 @@ width: 32px;
 height: 0px;
 }
 .upper-card {
-  margin-top: -135px !important;
+  margin-top: -125px !important;
 }
 .edge {
   border-radius: 10px !important;
@@ -137,7 +146,7 @@ li.MuiMenuItem-root {
 
 .apexcharts-gridlines-horizontal line,
 .apexcharts-xaxis-tick {
-  display: none;
+  /* display: none; */
 }
 
 #LineChart .apexcharts-series path {
@@ -448,7 +457,7 @@ li.MuiMenuItem-root {
 .apexcharts-yaxis,
 #LineChart .apexcharts-xaxis,
 .apexcharts-toolbar {
-  display: none !important;
+  /* display: none !important; */
 }
 
 .graphPrice {
@@ -830,6 +839,10 @@ margin-left: 10px;
     margin-left: 5px;
     border-radius: 10px;
 }
+.imagediv:hover{
+  background: #FFF5F8;
+border: 1px solid #E92A5E !important;
+}
 .disclaimer{
   margin-top: 8px;
   font-size: 14px;
@@ -981,14 +994,14 @@ margin-right: 40px;
   justify-content: space-between;
 }
 .amount{
-width: 200px;
+/* width: 200px; */
 }
 .flexbar{
   display: flex;
   /* margin-right: 29; */
 }
 .logorow{
-  margin-left: 80px !important;
+  margin-left: 68px !important;
 margin-bottom: 64px !important;
 margin-right: 40px !important;
 }
@@ -998,7 +1011,7 @@ margin-right: 40px !important;
   margin-right: 80px !important;
 }
 .addressrow{
-  margin-left: 80px !important;
+  margin-left: 68px !important;
   margin-right: 50px !important;
 }
 .space{
