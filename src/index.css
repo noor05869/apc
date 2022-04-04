@@ -479,7 +479,8 @@ li.MuiMenuItem-root {
 
 .stock-amount-slider {
   /* margin-left: 10px; */
-  /* width: 425px ; */
+  /* width: 320px ; */
+  /* margin-left: 2px; */
 }
 
 div#market_select {
@@ -594,6 +595,7 @@ width: 150px;
   height: 4px;
 }
 
+
 .css-eglki6-MuiLinearProgress-root {
   background-color: #e4396917 !important;
 }
@@ -661,7 +663,7 @@ background-color: white;
   }
 
   .css-1aznpnh-MuiSlider-root {
-    width: 95% !important;
+    width: 96% !important;
   }
 
   .mb-p-0 {

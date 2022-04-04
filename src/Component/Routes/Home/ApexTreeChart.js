@@ -76,7 +76,7 @@ class ApexTreeChart extends React.Component {
 
             <div id="Barchart">
 
-                <ReactApexChart options={this.state.options} series={this.state.series} type="treemap" height={350} />
+                <ReactApexChart options={this.state.options} series={this.state.series} type="treemap" height={550} />
             </div>
         )
     }

@@ -150,7 +150,7 @@ class ApexChart extends React.Component {
         
         return (
             <div id="LineChart" >
-                <ReactApexChart options={this.state.options} series={this.state.series} type="area" height={350}
+                <ReactApexChart options={this.state.options} series={this.state.series} type="area" height={550}
                 />
             </div>
 
