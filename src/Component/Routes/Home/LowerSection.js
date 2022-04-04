@@ -493,7 +493,7 @@ class LowerSection extends React.Component {
                 </p>
 
                 <div className=" marginfourty">
-                  <div className=" col-12 border  font-bold font-40 stock-amount-main-text">
+                  <div className=" col-12 selectborder   font-bold font-40 stock-amount-main-text">
                     {/* <strong>What if you invested in</strong> */}
                     <Select
                       value={this.state.type}
@@ -501,7 +501,7 @@ class LowerSection extends React.Component {
                       displayEmpty
                       inputProps={{ "aria-label": "Without label" }}
                       id="market_select"
-                      className="font-bold font-40 select"
+                      className="font-bold font-40 select "
                       disabled={this.state.loading}
                     >
                       <MenuItem value={"stocks"}>Stocks</MenuItem>
