@@ -493,7 +493,7 @@ class LowerSection extends React.Component {
                 </p>
 
                 <div className=" marginfourty">
-                  <h2 className=" col-12  font-bold font-40 stock-amount-main-text">
+                  <div className=" col-12  font-bold font-40 stock-amount-main-text">
                     {/* <strong>What if you invested in</strong> */}
                     <Select
                       value={this.state.type}
@@ -513,7 +513,7 @@ class LowerSection extends React.Component {
                         National Saving
                       </MenuItem>
                     </Select>
-                  </h2>
+                  </div>
                 </div>
               </div>
               <div className="row mt-5 sliderrow">
