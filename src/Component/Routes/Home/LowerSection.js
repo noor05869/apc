@@ -493,7 +493,25 @@ class LowerSection extends React.Component {
                 </p>
 
                 <div className=" marginfourty">
-                  <div className=" col-12 selectborder   font-bold font-40 stock-amount-main-text">
+                  <div className=" col-12    font-bold font-40 stock-amount-main-text">
+                  {/* <select class="form-select" aria-label="Default select example"  
+                    value={this.state.type}
+                    onChange={this.addActiveMarket}
+                    displayEmpty
+                    inputProps={{ "aria-label": "Without label" }}
+                    id="market_select"
+                    // className="font-bold font-40 select "
+                    disabled={this.state.loading}
+                  
+                  >
+  <option value={"stocks"}>Stocks</option>
+  <option value={"mutualFunds"}>Mutual Funds</option>
+  <option value={"forex"}>US Dollar</option>
+  <option value={"kibor"}>Term Deposit</option>
+  <option value={"nationalSavings"}>
+                        National Saving</option>
+
+</select> */}
                     {/* <strong>What if you invested in</strong> */}
                     <Select
                       value={this.state.type}
