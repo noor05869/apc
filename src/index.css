@@ -480,9 +480,27 @@ li.MuiMenuItem-root {
 .stock-amount-slider {
   /* margin-left: 10px; */
   /* width: 320px ; */
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
-
+.border {
+  border: 1px solid yellow !important;
+}
+.css-1eoe787-MuiSlider-markLabel {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: rgba(0, 0, 0, 0.87);
+  position: absolute;
+  white-space: nowrap;
+  top: 30px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 10px !important;
+}
 div#market_select {
   /* color         : #E5386A;
   font-weight   : bolder;

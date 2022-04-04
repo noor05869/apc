@@ -493,7 +493,7 @@ class LowerSection extends React.Component {
                 </p>
 
                 <div className=" marginfourty">
-                  <div className=" col-12  font-bold font-40 stock-amount-main-text">
+                  <div className=" col-12 border  font-bold font-40 stock-amount-main-text">
                     {/* <strong>What if you invested in</strong> */}
                     <Select
                       value={this.state.type}
