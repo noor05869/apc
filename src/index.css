@@ -541,7 +541,18 @@ letter-spacing: -0.04em !important;
 
 color: #FFFFFF !important;
 }
-
+.css-sxo8tj {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: rgba(0, 0, 0, 0.87);
+  position: absolute;
+  white-space: nowrap;
+  top: 30px;
+  transform: translateX(-50%);
+  margin-left: 3%;}
 /* .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root { 
   font-family   : "futura-bold" !important;
 
