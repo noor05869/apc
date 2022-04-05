@@ -542,25 +542,22 @@ letter-spacing: -0.04em !important;
 color: #FFFFFF !important;
 }
 
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-  /* font-family   : "futura-bold" !important;
-  font-size     : 2.5rem;
-  line-height   : 3rem;
-  letter-spacing: -0.01em; */
+/* .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root { 
+  font-family   : "futura-bold" !important;
+
   font-style: normal !important;
 font-weight: 500 !important;
 font-size: 16px !important;
 line-height: 24px !important;
-/* identical to box height, or 150% */
 
 
-/* gray/800 */
+
+
 
 
   width: 100% !important;
   border: 1px solid #eaeef2 !important;
-}
-
+} */
 div#market_select~fieldset {
   border: none;
 }

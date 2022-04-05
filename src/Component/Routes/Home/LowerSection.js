@@ -22,6 +22,9 @@ import { Link } from "react-router-dom";
 import imag2 from "../../../Images/image 5.png"
 import imag1 from "../../../Images/image 6.png"
 
+
+
+
 class LowerSection extends React.Component {
   constructor(props) {
     super(props);
@@ -519,8 +522,9 @@ class LowerSection extends React.Component {
                       displayEmpty
                       inputProps={{ "aria-label": "Without label" }}
                       id="market_select"
-                      className="font-bold font-40 select "
+                      // className="font-bold font-40 select "
                       disabled={this.state.loading}
+                     style={{ border:" 1px solid #eaeef2",width:"100%" }}
                     >
                       <MenuItem value={"stocks"}>Stocks</MenuItem>
                       <MenuItem value={"mutualFunds"}>Mutual Funds</MenuItem>
