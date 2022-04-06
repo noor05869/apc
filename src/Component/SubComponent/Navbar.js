@@ -94,7 +94,7 @@ const Navbar = () => {
         <div class="navwrapper">
           <APCLogo />
           <nav role="navigation" class="navigationmenu w-nav-menu">
-            <a href="#" class="navlinks w-nav-link">
+            <a href="#" class="navlinks active w-nav-link">
               Home
             </a>
             <a href="#" class="navlinks w-nav-link">
