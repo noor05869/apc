@@ -562,6 +562,20 @@ color: #FFFFFF !important;
   padding: 13px 0;
   margin-bottom: 20px;
 }
+.css-9cct2k {
+  border-radius: 12px;
+  box-sizing: content-box;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  touch-action: none;
+  color: rgb(25, 118, 210);
+  -webkit-tap-highlight-color: transparent;
+  height: 4px;
+  width: 96% !important;
+  padding: 13px 0px;
+  margin-bottom: 20px;
+}
 .css-sxo8tj {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
