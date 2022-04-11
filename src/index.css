@@ -510,7 +510,7 @@ li.MuiMenuItem-root {
 
 .stock-amount-main p {
   color: #98a5ba;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .stock-amount-slider {
@@ -632,7 +632,8 @@ span.MuiSlider-track.css-1gv0vcd-MuiSlider-track {
 .chart-area {
   /* background: #f5f6f8; */
   margin-top: -4px;
-  padding   : 50px;
+  /* padding   : 50px; */
+  /* padding-right: 30px; */
   padding-top: 0;
 }
 .border {
@@ -838,7 +839,7 @@ background-color: white;
     border-radius: 10px;
     /* margin-right: 10px; */
     background-color: white;
-   margin-top: 167px !important;
+   margin-top: 190px !important;
     width: 100% !important;
   
   }
@@ -1162,6 +1163,14 @@ color: #E92A5E;
     margin-top: -181px !important;
     background-color: white;
 }
+.chart-area {
+  /* background: #f5f6f8; */
+  margin-top: -49px;
+  /* padding   : 50px; */
+  /* padding-right: 30px; */
+  padding-top: 0;
+}
+
 .wrapper {
   max-width: 324px !important;
 }
@@ -1245,7 +1254,7 @@ margin-left: 13px;
   border-radius: 10px;
   /* margin-right: 10px; */
   background-color: white;
- margin-top: 167px !important;
+ margin-top: 190px !important;
   width: 100% !important;
 
 }
@@ -1628,6 +1637,11 @@ color: #FFFFFF !important;
     border-radius: 8px;
     background-color: #e92a5e;
   }
+  .locations {
+    grid-auto-flow: row !important;
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
+}
   /* .upper-card {
     margin-top: -181px !important;
 } */
