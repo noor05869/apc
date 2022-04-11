@@ -28,6 +28,7 @@ import psx from "../../../Images/psx.png";
 import credit from "../../../Images/Credit-Ratings.png";
 
 import logonc from "../../../Images/ncllogo.png";
+import axios from "axios";
 
 class LowerSection extends React.Component {
   constructor(props) {
@@ -54,6 +55,9 @@ class LowerSection extends React.Component {
     };
   }
 
+  componentDidMount(){
+  getData.getKibro()
+  }
   addActiveMarket = (e) => {
     let subStateAbbr =
       this.state.subStockTypes[e.target.value].length > 0
@@ -154,12 +158,28 @@ class LowerSection extends React.Component {
 
     if (type == "kibor") {
       let bidAmount = 0;
-
-      bidAmount = BarChartData.deposit[this.state.time] / 100;
+      const res= await getData.getKibro()
+      console.log("kibooooooooooor",res.data.data)
+response=res.data.data
+      // bidAmount = BarChartData.deposit[this.state.time] / 100;
+      if (response.length > 0) {
+                      let resultObj = response.find(o => o.tenor.toUpperCase() === timePeriod);
+                      console.log("resultobject",resultObj)
+                      // let bidAmount = 0;
+                      if (resultObj) {
+                          bidAmount = +resultObj.bid
+                      }
+                      else {
+                          // In case when value against year not avaiable
+                          resultObj = response[response.length - 1];
+                          // Multiple year value with last bid amount
+                          bidAmount = +resultObj.bid * (this.state.timeMarks[this.state.time].scaledValue)
+                      }}
       amountBecomed += investedAmount * (bidAmount + 1);
       // Present Vlaue = invedted amount * (bidAmount + 1)
+      console.log(amountBecomed)
       percentage += bidAmount * 100;
-
+console.log(" percennnnnnnnnn",percentage)
       let Data = [];
 
       TreeGraphData.map((x) => {
@@ -171,11 +191,15 @@ class LowerSection extends React.Component {
           });
         }
       });
+console.log(" timeeeeeeeeee",this.state.time)
 
+console.log(" DATAAAAAA",Data)
+    
       this.setState({
         AmountBecomed: parseInt(amountBecomed.toFixed(0)),
         obtPerct: percentage,
-        graphDate: Data,
+        
+        graphDate  : Data,
         loading: false,
         subTypeCode: this.state.subType,
         graphValueName: this.state.typeName,
@@ -183,44 +207,44 @@ class LowerSection extends React.Component {
       });
 
       // let resultObj = response.find(o => o.tenor.toUpperCase() === timePeriod);
-      // await getData.getKibor(21).then(res => {
-      //     let obj = {}
-      //     response = res.data.data;
+//       await axios.get(`https://staticapis.nextventures.com.pk/v1/kibro?date=2021-02-16`).then(res => {
+//           let obj = {}
+//           response = res.data.data;
+// console.log("ressssss",res.data)
+//           if (response.length > 0) {
+//               let resultObj = response.find(o => o.tenor.toUpperCase() === timePeriod);
+//               let bidAmount = 0;
+//               if (resultObj) {
+//                   bidAmount = +resultObj.bid
+//               }
+//               else {
+//                   // In case when value against year not avaiable
+//                   resultObj = response[response.length - 1];
+//                   // Multiple year value with last bid amount
+//                   bidAmount = +resultObj.bid * (this.state.timeMarks[this.state.time].scaledValue)
+//               }
+//               console.log({bidAmount})
+//               amountBecomed += (investedAmount * (bidAmount + 1))
+//               // Present Vlaue = invedted amount * (bidAmount + 1)
+//               percentage += (bidAmount * 100)
 
-      //     if (response.length > 0) {
-      //         let resultObj = response.find(o => o.tenor.toUpperCase() === timePeriod);
-      //         let bidAmount = 0;
-      //         if (resultObj) {
-      //             bidAmount = +resultObj.bid
-      //         }
-      //         else {
-      //             // In case when value against year not avaiable
-      //             resultObj = response[response.length - 1];
-      //             // Multiple year value with last bid amount
-      //             bidAmount = +resultObj.bid * (this.state.timeMarks[this.state.time].scaledValue)
-      //         }
-      //         console.log({bidAmount})
-      //         amountBecomed += (investedAmount * (bidAmount + 1))
-      //         // Present Vlaue = invedted amount * (bidAmount + 1)
-      //         percentage += (bidAmount * 100)
+//               let Data = [
+//                   [BarChartData.stocks[this.state.time], BarChartData.mutualFunds[this.state.time], percentage.toFixed(2)],
+//                   ['Stocks', 'Mutual Funds', 'Term Deposit']]
+//               this.setState({
+//                   AmountBecomed: parseInt(amountBecomed.toFixed(0)),
+//                   obtPerct: percentage,
+//                   graphDate: Data,
+//                   loading: false,
+//                   subTypeCode: this.state.subType,
+//                   graphValueName: this.state.typeName,
+//                   type: type
+//               })
 
-      //         let Data = [
-      //             [BarChartData.stocks[this.state.time], BarChartData.mutualFunds[this.state.time], percentage.toFixed(2)],
-      //             ['Stocks', 'Mutual Funds', 'Term Deposit']]
-      //         this.setState({
-      //             AmountBecomed: parseInt(amountBecomed.toFixed(0)),
-      //             obtPerct: percentage,
-      //             graphDate: Data,
-      //             loading: false,
-      //             subTypeCode: this.state.subType,
-      //             graphValueName: this.state.typeName,
-      //             type: type
-      //         })
-
-      //     }
-      // }, err => {
-      //     console.log(err)
-      // })
+//           }
+//       }, err => {
+//           console.log(err)
+//       })
     } else if (type == "nationalSavings") {
       let obj = {};
       // Multiple invested Amount value with 9.3%
@@ -472,7 +496,7 @@ class LowerSection extends React.Component {
 
   handleTimeChange = async (event, newValue) => {
     // Time change
-    // console.log(this.state.timeMarks)
+    console.log(newValue)
     this.setState({
       time: newValue,
     });
@@ -493,7 +517,7 @@ class LowerSection extends React.Component {
       <>
         <div className="container-fluid  my-8 wrapper cardsdiv">
           <div className="row stock-amount upper-card ">
-            <div className="col-lg-4 col-md-4 col-sm-10 py-5  selectassetdiv">
+            <div className="col-lg-4 col-md-4 col-sm-12 py-5  selectassetdiv">
               <div className="stock-amount-main">
                 <p className=" marginfourty text-left font-14 font-light">
                   <strong>Select Assets</strong>
@@ -671,7 +695,7 @@ class LowerSection extends React.Component {
               </div>
             </div>
             {/* <div className="col-md-1"></div> */}
-            <div className="col-lg-7 col-xl-7 col-md-7 col-sm-7 mb-p-0  chardiv">
+            <div className="col-lg-7 col-xl-7 col-md-7 col-sm-12 mb-p-0  chardiv">
               <div className="graph-loader">
                 {this.state.loading == true && <LinearProgress />}
               </div>
@@ -711,7 +735,8 @@ class LowerSection extends React.Component {
                                     </div> */}
                 </div>
                 <div>
-                  <div className="d-flex stock-company sliding">
+                  <div className=" row d-flex stock-company sliding">
+                    <div className="col companydiv">
                     {this.state.subStockTypes[this.state.type].map(
                       (value, index) => {
                         return (
@@ -733,6 +758,7 @@ class LowerSection extends React.Component {
                         );
                       }
                     )}
+                    </div>
                   </div>
                 </div>
                 <div className="w-100">
@@ -765,7 +791,7 @@ class LowerSection extends React.Component {
             <div class="contactgrid ">
               <div id="w-node-a81c1f40-3422-3f95-53cc-fd9b17766516-17766513">
                 <div>
-                  <h2 class="h2 font-bold adresswrap">
+                  <h2 class="h2 font-bold adresswrap ">
                     For further inquiries or assistance, <br />
                     please contact.
                   </h2>
@@ -778,7 +804,7 @@ class LowerSection extends React.Component {
               </div>
               <div
                 id="w-node-a81c1f40-3422-3f95-53cc-fd9b1776651f-17766513"
-                class="locations adresswrap"
+                class="locations addessmargin"
               >
                 <div class="locationkhi">
                   <p class="bt font-bold">

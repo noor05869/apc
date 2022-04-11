@@ -28,7 +28,7 @@ class ApexTreeChart extends React.Component {
                     },
                     formatter: function (text, op) {
                         console.log('op ============',op.value)
-                        return [text, (op.value).toFixed(2)+' %']
+                        return [text, (op.value).toFixed(2)+'%']
                     },
                     offsetY: -4
                 },

@@ -10,7 +10,7 @@ import Logo from "../../Images/Logo.png";
 const Navbar = () => {
   return (
     <>
-      {/* <nav className="navbar navbar-light  navbar-expand-md bg-white">
+      <nav className="navbar navbar-light  navbar-expand-md bg-white">
         <div className="container-fluid">
           <NavLink className="navbar-brand navlogo" to="/">
             <APCLogo />
@@ -27,62 +27,74 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 navul">
               <li className="   mx-1">
                 <NavLink className="   navlinks " aria-current="page" to="/">
                   Home
                 </NavLink>
               </li>
-              <li className=" mx-1">
-                <NavLink className="navlinks text-gray" to="/">
+              <li className=" m font-bold">
+                <NavLink className="navlinks text-gray font-bold " to="/a">
                   About
                 </NavLink>
               </li>
-              <li className=" mx-1"></li>
-              <li className=" mx-1">
-                <NavLink className="navlinks text-gray" to="/">
+              <li className=" m"></li>
+              <li className=" m">
+                <NavLink className="navlinks text-gray" to="/d">
                   Capabilities
                 </NavLink>
               </li>
-              <li className=" mx-1">
-                <NavLink className="navlinks text-gray" to="/">
+              <li className=" ">
+                <NavLink className="navlinks text-gray" to="/f">
                   Reports{" "}
                 </NavLink>
               </li>
-              <li className=" mx-1">
-                <NavLink className="navlinks text-gray" to="/">
+              <li className=" m">
+                <NavLink className="navlinks text-gray" to="/f">
                   Investors{" "}
                 </NavLink>
               </li>{" "}
-              <li className=" mx-1">
-                <NavLink className="navlinks text-gray" to="/">
+              <li className=" mx">
+                <NavLink className="navlinks text-gray" to="/g">
                   Contact{" "}
                 </NavLink>
               </li>
-              <li className=" mx-1">
-                <button class="navloginbtn " type="button">
-                  LOGIN
-                </button>
+              <li className=" ">
+              <a href="#" class="navlinks buttons w-nav-link">
+              Login
+            </a>
               </li>
-              <li className=" mx-1">
-                <button class=" navregbtn" type="button">
-                  Register
-                </button>
+              <li className=" ">
+              <a href="#" class="navlinks buttons _2 w-nav-link">
+              Register
+            </a>
               </li>
-              <li>
-                <button
-                  className="NavButton primary-btn"
-                  //   onClick={() => openTradingAccount()}
-                >
-                  Open your account
-                </button>
-              </li>
+           
+               <form action="/search" class="searchbar w-form">
+              <label for="search" class="field-label">
+                Search
+              </label>
+              <input
+                type="search"
+                class="searchinput w-input"
+                maxlength="256"
+                name="query"
+                placeholder=""
+                id="search"
+                required=""
+              />
+              <input
+                type="submit"
+                value="Search"
+                class="searchbutton w-button font-bold"
+              />
+            </form>
             </ul>
           </div>
         </div>
-      </nav> */}
+      </nav>
 
-      <div
+      {/* <div
         data-animation="default"
         data-collapse="medium"
         data-duration="400"
@@ -97,6 +109,7 @@ const Navbar = () => {
             <a href="#" class="navlinks active w-nav-link">
               Home
             </a>
+            
             <a href="#" class="navlinks w-nav-link">
               About
             </a>
@@ -138,11 +151,9 @@ const Navbar = () => {
               />
             </form>
           </nav>
-          {/* <div class="navbutton w-nav-button">
-            <div class="w-icon-nav-menu"></div>
-          </div> */}
+        
         </div>
-      </div>
+      </div> */}
 
 
 

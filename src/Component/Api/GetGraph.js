@@ -30,6 +30,21 @@ class getData {
 
     }
 
+
+    getKibro=()=>{
+        const res = async () => {
+            const resp = await axios.get(`${this.state.baseUrl}kibro?date=2021-02-16`)
+
+            .catch(function (error) {
+                console.log(error);
+            });
+
+            console.log('Kibrooossssssss ====>>>',resp)
+            return resp;
+
+        }
+        return res();
+    }
     getGraphData = (PastDate, CurrentDate, subType,mnths) => {
       let {from,to}=  this.getIntervals(mnths)
 
@@ -131,7 +146,7 @@ class getData {
     getKibor = (value) => {
         console.log('values for kibor is ====>>>>>>>>>>>',value)
         const res = async () => {
-            const resp = await axios.get(`${this.state.url2}kibor/${value}`)
+            const resp = await axios.get(`${this.state.baseUrl}kibor/kibro?date=2021-02-16`)
             .catch(function (error) {
                 console.log(error);
             });
