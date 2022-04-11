@@ -687,7 +687,7 @@ span.MuiSlider-track.css-1gv0vcd-MuiSlider-track {
 }
 .navlinks {
   color: #999 !important;
-  padding: 8px 16px !important;
+  /* padding: 8px 16px !important; */
   font-family: "futura-bold";
 font-weight: 700 !important;
   line-height: 20px !important;
@@ -699,7 +699,7 @@ font-weight: 700 !important;
     text-decoration: none !important;
     color: #222;
     /* padding: 18px !important; */
-    text-align: left !important;
+    /* text-align: left !important; */
     margin-left: auto !important;
     margin-right: auto !important;
  
@@ -1163,6 +1163,10 @@ color: #E92A5E;
 }
 .wrapper {
   max-width: 324px !important;
+}
+
+.loginBtn{
+  width: 98%;
 }
 .h2 {
   /* margin-top: 0 !important; */

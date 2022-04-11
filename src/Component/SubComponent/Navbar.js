@@ -59,13 +59,13 @@ const Navbar = () => {
                   Contact{" "}
                 </NavLink>
               </li>
-              <li className=" ">
-              <a href="#" class="navlinks buttons w-nav-link">
+              <li className=" loginBtn ">
+              <a href="#" class="navlinks buttons w-nav-link loginBtn">
               Login
             </a>
               </li>
-              <li className=" ">
-              <a href="#" class="navlinks buttons _2 w-nav-link">
+              <li className="loginBtn ">
+              <a href="#" class="navlinks buttons _2 w-nav-link loginBtn">
               Register
             </a>
               </li>
