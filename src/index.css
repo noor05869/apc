@@ -1166,7 +1166,12 @@ color: #E92A5E;
 }
 
 .loginBtn{
-  width: 98%;
+  width: 91%;
+  margin-bottom: 5px !important;
+}
+.regBtn{
+  width: 91%;
+  margin-bottom: 5px !important;
 }
 .h2 {
   /* margin-top: 0 !important; */
@@ -1629,7 +1634,7 @@ color: #FFFFFF !important;
   }
 
   .searchinput {
-    width: 208px;
+    width: 205px;
   }
   .header {
     font-style: normal !important;
@@ -1652,7 +1657,7 @@ color: #FFFFFF !important;
   }
 
   .searchbar {
-    margin-left: 16px;
+    margin-left: 26px;
   }
 }
 
@@ -1892,7 +1897,7 @@ font-weight: 700 !important;
   }
 
   .searchbar {
-    margin-left: 16px;
+    margin-left: 26px;
   }
 
   .contactgrid {

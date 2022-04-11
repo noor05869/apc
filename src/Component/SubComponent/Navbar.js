@@ -64,13 +64,13 @@ const Navbar = () => {
               Login
             </a>
               </li>
-              <li className="loginBtn ">
-              <a href="#" class="navlinks buttons _2 w-nav-link loginBtn">
+              <li className="regBtn ">
+              <a href="#" class="navlinks buttons _2 w-nav-link regBtn">
               Register
             </a>
               </li>
            
-               <form action="/search" class="searchbar w-form">
+               <form action="/search" class="searchbar w-form ">
               <label for="search" class="field-label">
                 Search
               </label>
