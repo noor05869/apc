@@ -1078,7 +1078,7 @@ console.log(" DATAAAAAA",Data)
                     </p>
                   </div>
                   <div class="footergist">
-                    <div>
+                    <div className="logosflex">
                       <a href="#" class="secp w-inline-block">
                         <img src={secp} loading="lazy" width="72" alt="" />
                       </a>

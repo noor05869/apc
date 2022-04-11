@@ -799,7 +799,7 @@ width: 150px;
 /* margin-left: 20px; */
 background-color: white;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .borderRight {
     border-right: 0px;
   }
@@ -1133,7 +1133,6 @@ color: #E92A5E;
   margin-left: 17px !important
 
 }
-
 
 
 
@@ -1975,4 +1974,7 @@ font-weight: 700 !important;
 }
 .navul{
 align-items: center;
+}
+.logosflex{
+  display: flex !important;
 }
