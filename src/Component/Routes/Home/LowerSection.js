@@ -517,7 +517,7 @@ console.log(" DATAAAAAA",Data)
       <>
         <div className="container-fluid  my-8 wrapper cardsdiv">
           <div className="row stock-amount upper-card ">
-            <div className="col-lg-4 col-md-4 col-sm-12 py-5  selectassetdiv">
+            <div className="col-lg-4 col-md-4 col-sm-12  selectassetdiv">
               <div className="stock-amount-main">
                 <p className=" marginfourty text-left font-14 font-light">
                   <strong>Select Assets</strong>

@@ -510,6 +510,7 @@ li.MuiMenuItem-root {
 
 .stock-amount-main p {
   color: #98a5ba;
+  margin-top: 30px;
 }
 
 .stock-amount-slider {
@@ -1153,7 +1154,7 @@ color: #E92A5E;
   .selectassetdiv {
     border-radius: 10px;
     /* margin-right: 18px !important; */
-    height: 440px;
+    height: 420px;
     /* margin-left: 55px; */
     width: 100% !important;
 
@@ -1199,7 +1200,7 @@ color: #E92A5E;
 }
 .stock-amount-slider {
   /* margin-left: 10px; */
-  width: 250px;
+  width: 235px;
   /* margin-left: 10px; */
 }
 .companydiv{
