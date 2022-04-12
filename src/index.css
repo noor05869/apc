@@ -862,7 +862,7 @@ background-color: white;
   .selectassetdiv {
     border-radius: 10px;
     /* margin-right: 18px !important; */
-    height: 470px;
+    height: 450px;
     /* margin-left: 55px; */
     width: 100% !important;
 
@@ -1155,13 +1155,19 @@ color: #E92A5E;
   .selectassetdiv {
     border-radius: 10px;
     /* margin-right: 18px !important; */
-    height: 420px;
+    height: 440px;
     /* margin-left: 55px; */
     width: 100% !important;
 
     /* margin-left: 80px; */
     margin-top: -181px !important;
     background-color: white;
+}
+.companydiv {
+  margin-right: 8px;
+}
+.navlinks {
+  text-align: center;
 }
 .chart-area {
   /* background: #f5f6f8; */
@@ -1519,7 +1525,7 @@ color: #FFFFFF !important;
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  text-align: left;
+  /* text-align: left; */
   margin-right: auto;
 }
 .navlinks.buttons:hover {
