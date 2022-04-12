@@ -7,9 +7,9 @@ const Home = () => {
     return (
         <>
         <div className='   '>
-                    {/* <div className='row '> */}
+                    <div className='navigationbar '>
                     <Navbar />
-                    {/* </div> */}
+                    </div>
             <div className="Background ">
                 <div className=" Background1">
                     <div className="wrapper  ">
@@ -32,7 +32,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" ">
+                <div className="">
                     <LowerSection />
                 </div>
                 {/* <LowerSection /> */}
