@@ -1,5 +1,5 @@
 
-
+// fixed-top
 
 
 import React from "react";
@@ -10,7 +10,7 @@ import Logo from "../../Images/Logo.png";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-light fixed-top navbar-expand-md bg-white">
+      <nav className="navbar navbar-light  navbar-expand-md bg-white">
         <div className="container-fluid ">
           <NavLink className="navbar-brand navlogo" to="/">
             <APCLogo />
