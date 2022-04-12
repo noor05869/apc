@@ -15,7 +15,7 @@ const Home = () => {
                     <div className="wrapper  ">
                                 <div className="">
                         <div className="row ">
-                            <div className="col-12 col-md-6 ">
+                            <div className="col-lg-8 col-md-6 ">
                                     <h2 className='header font-bold  '>Assets Performance Comparator</h2>
                                     {/* <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation </p> */}
 
