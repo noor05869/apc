@@ -15,7 +15,8 @@
 body{
   background-color: #F4F5F7 !important;
   overflow-x: hidden;
-  color: #252f3f;
+  color: #252f3f !important;
+  font-family: "futura-light";
 
 }
 .maingrid{
@@ -1235,10 +1236,10 @@ color: #E92A5E;
   /* padding-right: 30px; */
   padding-top: 0;
 }
-
+/* 
 .wrapper {
   max-width: 324px !important;
-}
+} */
 
 .loginBtn{
   width: 91%;
@@ -1728,6 +1729,16 @@ color: #FFFFFF !important;
 }
 
 @media screen and (max-width: 479px) {
+  .othergrid {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    grid-row-gap: 24px !important;
+    /* -ms-grid-columns: 1fr; */
+    grid-template-columns: 1fr !important;
+}
+.othercard {
+  padding: 24px;
+}
   .navbutton.w--open {
     border-radius: 8px;
     background-color: #e92a5e;
@@ -1964,9 +1975,9 @@ font-weight: 700 !important;
     margin-top: 0px;
   }
 
-  .wrapper {
+  /* .wrapper {
     max-width: 740px;
-  }
+  } */
 
   .section.contact {
     padding-bottom: 80px;
@@ -2103,4 +2114,83 @@ align-items: center;
 }
 .logosflex{
   display: flex !important;
+}
+.section.grey {
+  background-color: #f4f5f7;
+}
+.othergrid {
+  /* display: -ms-grid; */
+  display: grid;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  /* -ms-grid-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* -ms-grid-rows: auto; */
+  grid-template-rows: auto;
+}
+.othercard {
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.cardparagraph {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.p2 {
+  margin-bottom: 0;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.secondary-cta {
+  display: block;
+  margin-top: 24px;
+  text-decoration: none;
+}
+.w-inline-block {
+  max-width: 100%;
+  /* display: inline-block; */
+}
+.p1 {
+  margin-bottom: 0;
+  color: #e92a5e;
+  letter-spacing: -.02em;
+}
+.headd {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px !important;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -.06em;
+}
+.section.accountopening {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),url("./Images/openaccount.png");
+  background-position: 0 0,50% 0;
+  background-size: auto,cover;
+  background-repeat: repeat,no-repeat;
+  background-attachment: scroll,fixed;
+}
+.h2.white {
+  color: #fff;
+}
+@media screen and (max-width: 479px){
+.h2 {
+    font-size: 24px;
+    line-height: 28px;
+}}
+.videocontainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -99;
+  overflow: hidden;
 }
