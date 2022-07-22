@@ -32,6 +32,19 @@ class ApexTreeChart extends React.Component {
                     },
                     offsetY: -4
                 },
+                tooltip: {
+                 
+                        
+                          y: {
+                            formatter: function(y) {
+                                console.log( y)
+                                if(typeof y !== "undefined") {
+                                    return  y.toFixed(0) + " %";
+                                  }
+                                  return y;
+                                  
+                            }}
+                },
                 colors: [
                     '#E5386A',
                     '#E5386A',
@@ -55,7 +68,7 @@ class ApexTreeChart extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
-
+console.log("seeeeeeeeeeeeerrrrrrrrrrrrrreeeeeee",this.props.Data )
         if (this.props.Data != prevProps.Data) {
 
             let seriesData = [

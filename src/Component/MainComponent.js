@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Home from './Routes/Home/Home';
 import getData from '../Component/Api/GetGraph';
-import LandingPage from './Routes/LandingPage';
 
 class MainComponent extends Component {
     
@@ -12,8 +11,6 @@ class MainComponent extends Component {
             <>
                 <Switch>
                     <Route path='/home' component={Home} />
-                    <Route path='/LandingPage' component={LandingPage} />
-
                     <Redirect to="/home" />
                 </Switch>
             </>
