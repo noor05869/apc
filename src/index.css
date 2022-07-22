@@ -626,7 +626,7 @@ div#market_select~fieldset {
 }
 
 span.MuiSlider-track.css-1gv0vcd-MuiSlider-track {
-  color: #E5386A;
+  color: #E5386A !important;
 }
 
 .chart-area {
