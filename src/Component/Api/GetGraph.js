@@ -20,7 +20,7 @@ class getData {
         var startDate = new Date(start + '-01-' + yyyy);
         var endDate = end > 12 ? new Date('01-01-' + (yyyy + 1)) : new Date(end + '-01-' + (yyyy));
         var endDate = new Date((endDate.getTime()) - 1)
-        console.log(startDate,"months get------------------------->",endDate)
+        console.log("StartDate",startDate,"endDate",endDate)
 
         let from = moment(startDate).subtract(intervalmonths, 'months').format('YYYY-MM-DD')
         let to = moment(startDate).utc().format('YYYY-MM-DD')
