@@ -39,7 +39,8 @@ class getData {
 
 
         const res = async () => {
-            const resp = await axios.get(`${this.state.baseUrl}historical?symbol=${subType}&to=${to}&from=${from}`)
+            // const resp = await axios.get(`${this.state.baseUrl}historical?symbol=${subType}&to=${to}&from=${from}`)
+            const resp = await axios.get(`${this.state.baseUrl}historical?symbol=${subType}&to=2022-06-30&from=2022-01-01`)
 
                 .catch(function (error) {
                     console.log(error);
