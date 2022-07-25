@@ -12,7 +12,6 @@ class getData {
     }
 
     getIntervals = (intervalmonths) => {
-        console.log("months get------------------------->",intervalmonths)
         var currentMonth = (new Date()).getMonth()
         var moment = require('moment')
         var yyyy = (new Date()).getFullYear()
@@ -21,6 +20,8 @@ class getData {
         var startDate = new Date(start + '-01-' + yyyy);
         var endDate = end > 12 ? new Date('01-01-' + (yyyy + 1)) : new Date(end + '-01-' + (yyyy));
         var endDate = new Date((endDate.getTime()) - 1)
+        console.log(startDate,"months get------------------------->",endDate)
+
         let from = moment(startDate).subtract(intervalmonths, 'months').format('YYYY-MM-DD')
         let to = moment(startDate).utc().format('YYYY-MM-DD')
         console.log(to, ' to  ====>>>>>>>>>>>>>>>>>from', from)
