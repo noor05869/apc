@@ -12,6 +12,7 @@ class getData {
     }
 
     getIntervals = (intervalmonths) => {
+        console.log("months get------------------------->",intervalmonths)
         var currentMonth = (new Date()).getMonth()
         var moment = require('moment')
         var yyyy = (new Date()).getFullYear()
@@ -22,7 +23,7 @@ class getData {
         var endDate = new Date((endDate.getTime()) - 1)
         let from = moment(startDate).subtract(intervalmonths, 'months').format('YYYY-MM-DD')
         let to = moment(startDate).utc().format('YYYY-MM-DD')
-        // console.log(to, ' to  ====>>>>>>>>>>>>>>>>>from', from)
+        console.log(to, ' to  ====>>>>>>>>>>>>>>>>>from', from)
         return {
             from: from,
             to: to
@@ -32,6 +33,7 @@ class getData {
 
     getGraphData = (subType, mnths) => {
         let { from, to } = this.getIntervals(mnths)
+        console.log(subType, 'cdddddddddddddfsdfsfs', mnths)
 
         console.log(from, 'data is=============>>>>>>>>>>>>', to)
 
