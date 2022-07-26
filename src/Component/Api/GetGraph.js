@@ -22,11 +22,11 @@ class getData {
         var end = start + 3;
         console.log("end",end)
         // var startDate = new Date(start + '-01-' + yyyy);
-        // var startDate = new Date(`${start}-01-${yyyy}`);
-        var startDate =`${yyyy}-01-${start}`;
+        var startDate = new Date(`${start}/01/${yyyy}`);
+        // var startDate =`${yyyy}-01-${start}`;
 
 
-        var endDate = end > 12 ? new Date('01-01-' + (yyyy + 1) ) : new Date(end + '-01-' + (yyyy) );
+        var endDate = end > 12 ? new Date('01/01/' + (yyyy + 1) ) : new Date(end + '/01/' + (yyyy) );
         var endDate = new Date((endDate.getTime()) - 1)
         console.log("StartDate",startDate,"endDate",endDate)
 
