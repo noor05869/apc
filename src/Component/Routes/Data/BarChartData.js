@@ -22,7 +22,7 @@ const BarChartData =
         3: 7.08,
         2: 5.31,
         1: 3.54,
-        0: 1.77,
+        0: 8.44,
     },
     nationalSavings: {
         5: 56.00,

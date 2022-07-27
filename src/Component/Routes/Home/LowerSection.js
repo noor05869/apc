@@ -91,29 +91,70 @@ class LowerSection extends React.Component {
       const keys = Object.entries(this.state.kiborBidAmount);
       keys.forEach((x, index) => {
         if (this.state.time === index) {
-          if (this.state.time < 4) {
+          if (this.state.time ===1 ) {
             // console.log({ x, index })
             bidAmount = x[1].offer / 100;
+            percentage=8.02
           }
-          else if (this.state.time === 4) {
-            console.log("------------------>", this.state.kiborBidAmount)
-            // bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) / 100;
+          else if( this.state.time ===2 ){
+            percentage=7.96
+         
           }
-          else if (this.state.time === 5) {
-            console.log("------------------>", this.state.kiborBidAmount)
+          else if( this.state.time ===3 ){
+            percentage=7.45
+    
+          }else if( this.state.time ===4 ){
+            percentage=8.08
+        
+            
+          }else if( this.state.time ===5 ){
+            percentage=32
+        
+          }
+          // else if (this.state.time === 4) {
+          //   console.log("------------------>", this.state.kiborBidAmount)
+          //   bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) / 100;
+          // }
+          // else if (this.state.time === 5) {
+          //   console.log("------------------>", this.state.kiborBidAmount)
 
-            // bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) * (this.state.kiborBidAmount.y4.offer + 1) * (this.state.kiborBidAmount.y5.offer + 1) / 100;
+          //   bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) * (this.state.kiborBidAmount.y4.offer + 1) * (this.state.kiborBidAmount.y5.offer + 1) / 100;
 
-          }
-          amountBecomed += investedAmount * (bidAmount + 1);
-          // Present Vlaue = invedted amount * (bidAmount + 1)
-          percentage += bidAmount * 100;
+          // }
+          // amountBecomed += investedAmount * (bidAmount + 1);
+          // // Present Vlaue = invedted amount * (bidAmount + 1)
+          // percentage += bidAmount * 100;
           Data.push({
             x: 'TermDeposit',
             y: percentage
           });
         }
       })
+      // keys.forEach((x, index) => {
+      //   if (this.state.time === index) {
+      //     if (this.state.time < 4) {
+      //       // console.log({ x, index })
+      //       bidAmount = x[1].offer / 100;
+      //     }
+      //     else if (this.state.time === 4) {
+      //       console.log("------------------>", this.state.kiborBidAmount)
+      //       bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) / 100;
+      //     }
+      //     else if (this.state.time === 5) {
+      //       console.log("------------------>", this.state.kiborBidAmount)
+
+      //       bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) * (this.state.kiborBidAmount.y4.offer + 1) * (this.state.kiborBidAmount.y5.offer + 1) / 100;
+
+      //     }
+      //     amountBecomed += investedAmount * (bidAmount + 1);
+      //     // Present Vlaue = invedted amount * (bidAmount + 1)
+      //     percentage += bidAmount * 100;
+      //     Data.push({
+      //       x: 'TermDeposit',
+      //       y: percentage
+      //     });
+      //   }
+      // })
 
 
       await this.getStocksdata('SYS').then((res) => {
@@ -149,13 +190,11 @@ class LowerSection extends React.Component {
         Data.push({
           x: 'AVN',
           y: ((res.data.data[0].close - res.data.data[res.data.data.length - 1].close) / res.data.data[res.data.data.length - 1].close) * 100,
-        });      Data.push({
-          x: 'TermDeposit',
-          y: ((res.data.data[0].close - res.data.data[res.data.data.length - 1].close) / res.data.data[res.data.data.length - 1].close) * 100,
-        });
+        });    
+    
 
       })
-
+    
 
 
       // TreeGraphData.map((x) => {
@@ -295,6 +334,7 @@ class LowerSection extends React.Component {
         }
       );
     }
+
     if (subtype) {
       subtype.forEach(async (subTypeId, index) => {
         let obj = {};
@@ -368,6 +408,7 @@ class LowerSection extends React.Component {
   };
 
   getStocksdata(subtype) {
+    console.log("stcks000000000000000000000000",subtype)
     // alert('2')
     // let DayMinus = 0;
     // if (this.state.time == 0) {
@@ -455,7 +496,6 @@ class LowerSection extends React.Component {
           
           () => this.generateChart(e.target.value, subStateAbbr)
           );
-          console.log("REDDDDDDDDDDDDDDD",this.state.subType)
       })
     }
     else {
