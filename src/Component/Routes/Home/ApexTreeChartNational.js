@@ -2,7 +2,7 @@ import React from 'react';
 import ReactApexChart from 'react-apexcharts'
 
 
-class ApexTreeChart extends React.Component {
+class ApexTreeChartNational extends React.Component {
     constructor(props) {
         super(props);
 const term=[  '#31C48D',
@@ -60,11 +60,14 @@ const national=[
                                   
                             }}
                 },
-                colors:[  '#31C48D',
-                '#E8386A',
+                colors:[ '#E5386A',
+                '#E5386A',
+                '#E5386A',
+                '#E5386A',
                 '#3F83F8',
                 '#3F83F8',
-                '#E5386A',],
+                '#3F83F8',
+                '#31C48D',],
                   plotOptions: {
                     treemap: {
                       distributed: true,
@@ -105,4 +108,4 @@ console.log("seeeeeeeeeeeeerrrrrrrrrrrrrreeeeeee",this.props.Data )
     }
 }
 
-export default ApexTreeChart;
+export default ApexTreeChartNational;

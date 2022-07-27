@@ -29,6 +29,7 @@ import credit from "../../../Images/Credit-Ratings.png";
 
 import logonc from "../../../Images/ncllogo.png";
 import axios from "axios";
+import ApexTreeChartNational from "./ApexTreeChartNational";
 
 class LowerSection extends React.Component {
   constructor(props) {
@@ -897,8 +898,14 @@ class LowerSection extends React.Component {
                   </div>
                 </div>
                 <div className="w-100">
-                  {this.state.type == "nationalSavings" ||
-                    this.state.type == "kibor" ? (
+                  {this.state.type == "nationalSavings" ?<ApexTreeChartNational Data={this.state.graphDate} />:this.state.type == "kibor"?  <ApexTreeChart Data={this.state.graphDate} />: <Graph
+                      graphDate={this.state.graphDate}
+                      subType={this.state.subTypeCode}
+                      subTypeName={this.state.graphValueName}
+                      type={this.state.type}
+                      time={this.state.time}
+                    />}
+                    {/* this.state.type == "kibor" ? (
                     // <ApexBarChart
                     //     Firstdata={this.state.graphDate[1]}
                     //     ScndData={this.state.graphDate[0]} />
@@ -912,7 +919,7 @@ class LowerSection extends React.Component {
                       type={this.state.type}
                       time={this.state.time}
                     />
-                  )}
+                  )} */}
                   {/* <ApexBarChart /> */}
                 </div>
                 {/* <a href="#" className="btn_secondary">Open Account</a> */}
