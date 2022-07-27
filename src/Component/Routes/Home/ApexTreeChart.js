@@ -5,7 +5,22 @@ import ReactApexChart from 'react-apexcharts'
 class ApexTreeChart extends React.Component {
     constructor(props) {
         super(props);
+const term=[  '#31C48D',
+'#E8386A',
+'#3F83F8',
+'#3F83F8',
+'#E5386A',]
+const national=[
+    '#31C48D',
+      '#E5386A',
+                    '#E5386A',
+                    
+                    '#3F83F8',
 
+                    '#3F83F8',
+                    '#E5386A',
+
+]
         this.state = {
 
             series: [
@@ -45,13 +60,7 @@ class ApexTreeChart extends React.Component {
                                   
                             }}
                 },
-                colors: [
-                    '#E5386A',
-                    '#3F83F8',
-                    '#3F83F8',
-                    
-                    '#31C48D',
-                  ],
+                colors: this.state?.series?.length>5?national:term,
                   plotOptions: {
                     treemap: {
                       distributed: true,
