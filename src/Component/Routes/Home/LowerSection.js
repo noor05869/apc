@@ -91,25 +91,46 @@ class LowerSection extends React.Component {
       const keys = Object.entries(this.state.kiborBidAmount);
       keys.forEach((x, index) => {
         if (this.state.time === index) {
+          if (this.state.time ===0) {
+            // console.log({ x, index })
+            // bidAmount = x[1].offer / 100;
+            
+            percentage=6.02
+     
+            amountBecomed += investedAmount * percentage;
+          }
           if (this.state.time ===1 ) {
             // console.log({ x, index })
-            bidAmount = x[1].offer / 100;
+            // bidAmount = x[1].offer / 100;
+            
             percentage=8.02
+     
+            amountBecomed += investedAmount * percentage;
           }
           else if( this.state.time ===2 ){
             percentage=7.96
+            amountBecomed += investedAmount * percentage;
+
          
+
           }
           else if( this.state.time ===3 ){
             percentage=7.45
+            amountBecomed += investedAmount * percentage;
+
     
           }else if( this.state.time ===4 ){
             percentage=8.08
-        
+            // bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) / 100;
+           
+            amountBecomed += investedAmount * percentage;
+
             
           }else if( this.state.time ===5 ){
             percentage=32
+      amountBecomed += investedAmount * percentage;
         
+         
           }
           // else if (this.state.time === 4) {
           //   console.log("------------------>", this.state.kiborBidAmount)
