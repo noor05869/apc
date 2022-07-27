@@ -56,7 +56,7 @@ class ApexBarChart extends React.Component {
                     offsetY: -20,
                     style: {
                         fontSize: '14px',
-                        colors: ["#304758"],
+                        colors: ["#304758",],
                         fontFamily: '"Roboto","Helvetica","Arial",sans-serif'
                     }
                 },

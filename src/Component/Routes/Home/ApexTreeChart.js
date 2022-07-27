@@ -47,12 +47,9 @@ class ApexTreeChart extends React.Component {
                 },
                 colors: [
                     '#E5386A',
-                    '#E5386A',
-                    '#E5386A',
-                    '#E5386A',
                     '#3F83F8',
                     '#3F83F8',
-                    '#3F83F8',
+                    
                     '#31C48D',
                   ],
                   plotOptions: {

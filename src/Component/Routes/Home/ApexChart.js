@@ -58,7 +58,7 @@ class ApexChart extends React.Component {
                     },
                   
                 },
-                colors: ["#FF1654", "#247BA0"],
+                colors: ["#FF1654", "#247BA0",'#3F83F8'],
                fill: {
     type: "gradient",
     gradient: {

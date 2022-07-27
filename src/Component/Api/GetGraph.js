@@ -17,10 +17,10 @@ class getData {
         var yyyy = (new Date()).getFullYear()
         console.log("yyyy",yyyy)
         var start = (Math.floor(currentMonth / 3) * 3) + 1;
-        console.log("start",start)
+        // console.log("start",start)
 
         var end = start + 3;
-        console.log("end",end)
+        // console.log("end",end)
         // var startDate = new Date(start + '-01-' + yyyy);
         var startDate = new Date(`${start}/01/${yyyy}`);
         // var startDate =`${yyyy}-01-${start}`;
@@ -28,11 +28,11 @@ class getData {
 
         var endDate = end > 12 ? new Date('01/01/' + (yyyy + 1) ) : new Date(end + '/01/' + (yyyy) );
         var endDate = new Date((endDate.getTime()) - 1)
-        console.log("StartDate",startDate,"endDate",endDate)
+        // console.log("StartDate",startDate,"endDate",endDate)
 
         let from = moment(startDate).subtract(intervalmonths, 'months').format('YYYY-MM-DD')
         let to = moment(startDate).utc().format('YYYY-MM-DD')
-        console.log(to, ' to  ====>>>>>>>>>>>>>>>>>from' , from)
+        // console.log(to, ' to  ====>>>>>>>>>>>>>>>>>from' , from)
         return {
             from: from,
             to: to
@@ -79,7 +79,7 @@ class getData {
 
     getFunds = (payload, timeSpan) => {
 
-        console.log(payload, 'payload is ===========>>>>>>>>>>>>>>>>', timeSpan)
+        // console.log(payload, 'payload is ===========>>>>>>>>>>>>>>>>', timeSpan)
         let { from, to } = this.getIntervals(timeSpan)
 
 
@@ -91,7 +91,7 @@ class getData {
                     console.log(error);
                 });
 
-            console.log('response is getFunds ====>>>', resp)
+            // console.log('response is getFunds ====>>>', resp)
             return resp;
 
         }
@@ -109,7 +109,7 @@ class getData {
 
         let { from, to } = this.getIntervals(month)
 
-        console.log(from, 'data is=============>>>>>>>>>>>>', to)
+        // console.log(from, 'data is=============>>>>>>>>>>>>', to)
 
 
 
@@ -120,7 +120,7 @@ class getData {
                     console.log(error);
                 });
 
-            console.log('response is ====>>>', resp)
+            // console.log('response is ====>>>', resp)
             return resp;
 
         }
@@ -141,7 +141,7 @@ class getData {
     }
 
     getKibor = (value) => {
-        console.log('values for kibor is ====>>>>>>>>>>>', value)
+        // console.log('values for kibor is ====>>>>>>>>>>>', value)
         const res = async () => {
             const resp = await axios.get(`${this.state.url2}kibor/${value}`)
                 .catch(function (error) {

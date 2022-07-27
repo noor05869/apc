@@ -95,40 +95,47 @@ class LowerSection extends React.Component {
             // console.log({ x, index })
             // bidAmount = x[1].offer / 100;
             
-            percentage=6.02
-     
-            amountBecomed += investedAmount * percentage;
+            percentage=8.02
+     console.log("investedAmount",(1+(percentage/100))*investedAmount)
+     amountBecomed=(1+(percentage/100))*investedAmount
+    
           }
           if (this.state.time ===1 ) {
             // console.log({ x, index })
             // bidAmount = x[1].offer / 100;
             
-            percentage=8.02
+            percentage=7.69
      
-            amountBecomed += investedAmount * percentage;
+            amountBecomed=(1+(percentage/100))*investedAmount
+
           }
           else if( this.state.time ===2 ){
-            percentage=7.96
-            amountBecomed += investedAmount * percentage;
+            percentage=7.45
+            amountBecomed=(1+(percentage/100))*investedAmount
+
 
          
 
           }
           else if( this.state.time ===3 ){
-            percentage=7.45
-            amountBecomed += investedAmount * percentage;
+            percentage=8.08
+            amountBecomed=(1+(percentage/100))*investedAmount
+
 
     
           }else if( this.state.time ===4 ){
-            percentage=8.08
+            percentage=32
             // bidAmount = (this.state.kiborBidAmount.y1.offer + 1) * (this.state.kiborBidAmount.y2.offer + 1) * (this.state.kiborBidAmount.y3.offer + 1) / 100;
            
-            amountBecomed += investedAmount * percentage;
+            amountBecomed=(1+(percentage/100))*investedAmount
+
 
             
           }else if( this.state.time ===5 ){
-            percentage=32
-      amountBecomed += investedAmount * percentage;
+            percentage=53.25
+     console.log("investedAmount",(1+(percentage/100))*investedAmount)
+
+      amountBecomed=(1+(percentage/100))*investedAmount
         
          
           }
@@ -285,6 +292,7 @@ class LowerSection extends React.Component {
         0.093 * this.state.timeMarks[this.state.time].state + 1;
       let percentage = 9.3 * this.state.timeMarks[this.state.time].state;
       if (this.state.timeMarks[this.state.time].state >= 1) {
+
         afterPercent = Math.pow(
           1.093,
           this.state.timeMarks[this.state.time].state
