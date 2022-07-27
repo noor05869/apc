@@ -149,6 +149,9 @@ class LowerSection extends React.Component {
         Data.push({
           x: 'AVN',
           y: ((res.data.data[0].close - res.data.data[res.data.data.length - 1].close) / res.data.data[res.data.data.length - 1].close) * 100,
+        });      Data.push({
+          x: 'TermDeposit',
+          y: ((res.data.data[0].close - res.data.data[res.data.data.length - 1].close) / res.data.data[res.data.data.length - 1].close) * 100,
         });
 
       })
@@ -316,7 +319,7 @@ class LowerSection extends React.Component {
                   // percent = present value-investedamount * 100 / invested amount
                   percentage =
                     ((amountBecomed - investedAmount * subtype.length) * 100) /
-                    (investedAmount * subtype.length);
+                    (investedAmount * subtype.length) ;
                   // amountBecomed = amountBecomed.toFixed(2)
                   // percentage = percentage.toFixed(2)
                   // graphDate = response
